@@ -1,0 +1,674 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f4f8fd;
+}
+
+/* 顶部标题美化 */
+.app-header-pro {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 0;
+  min-height: 120px;
+  padding-top: 36px;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.app-header-pro::after {
+  display: none !important;
+}
+.app-title-pro {
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 24px #43cea244, 0 1.5px 6px #185a9d33;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.app-subtitle-pro {
+  font-size: 1.25rem;
+  color: #185a9d;
+  letter-spacing: 2px;
+  opacity: 0.85;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 0 2px 8px #43cea233;
+}
+
+/* 全局背景美化 */
+.app-bg-quiz {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 40%, #43cea2 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+.app-bg-quiz::before {
+  content: '';
+  position: absolute;
+  left: 10vw;
+  top: 8vh;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle at 60% 40%, #43cea2cc 0%, #43cea200 80%);
+  filter: blur(24px);
+  z-index: 1;
+  pointer-events: none;
+}
+.app-bg-quiz::after {
+  content: '';
+  position: absolute;
+  right: 8vw;
+  bottom: 6vh;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle at 40% 60%, #185a9dcc 0%, #185a9d00 80%);
+  filter: blur(24px);
+  z-index: 1;
+  pointer-events: none;
+}
+.main-content-wide {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+/* 能力测试界面美化 */
+.quiz-title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.quiz-title {
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: #fff;
+  border-radius: 18px;
+  padding: 20px 60px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  box-shadow: 0 4px 24px #185a9d22, 0 1.5px 6px #43cea244;
+  border: none;
+  text-shadow: 0 2px 8px #43cea233;
+}
+.quiz-container {
+  background: rgba(255,255,255,0.85);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(24,90,157,0.13);
+  padding: 48px 40px;
+  max-width: 700px;
+  margin: 60px auto;
+  position: relative;
+  backdrop-filter: blur(6px);
+}
+.quiz-question {
+  margin-bottom: 28px;
+}
+.quiz-question label {
+  font-size: 1.1rem;
+  color: #185a9d;
+  font-weight: 500;
+  margin-left: 8px;
+}
+.quiz-loading-box {
+  background: rgba(255,255,255,0.92);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(24,90,157,0.18);
+  padding: 56px 64px 48px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  backdrop-filter: blur(8px);
+}
+.quiz-loading-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #185a9d;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+}
+.quiz-loading-text {
+  font-size: 1.1rem;
+  color: #43cea2;
+  margin-bottom: 24px;
+}
+.quiz-loading-spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #43cea2;
+  border-top: 4px solid #185a9d;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 标题美化 */
+.app-header-quiz {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 12px #185a9d11;
+  padding: 0;
+  margin-bottom: 0;
+  min-height: 80px;
+}
+.app-title-quiz {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #185a9d;
+  letter-spacing: 4px;
+  text-shadow: 0 2px 8px #43cea233;
+  padding: 0 24px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #fafdff 60%, #e6f9f3 100%);
+  margin-top: 12px;
+}
+
+.quiz-dimension {
+  display: inline-block;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 2px 12px;
+  margin-right: 12px;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 4px #185a9d22;
+}
+
+.quiz-result-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #185a9d22;
+  padding: 32px 40px;
+  max-width: 700px;
+  margin: 32px auto 0 auto;
+  text-align: center;
+}
+.quiz-result-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #185a9d;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+.quiz-result-level {
+  font-size: 1.1rem;
+  color: #43cea2;
+  margin-bottom: 8px;
+}
+.quiz-result-score {
+  font-size: 1.1rem;
+  color: #185a9d;
+  margin-bottom: 8px;
+}
+.quiz-result-desc {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 8px;
+}
+
+.module-card-active {
+  border: 2.5px solid #43cea2;
+  background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px #43cea244;
+  transform: scale(1.05);
+}
+
+.vocab-btn {
+  background: #fff;
+  color: #185a9d;
+  border: 2px solid #43cea2;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  min-width: 120px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.vocab-btn.selected {
+  background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+  color: #fff;
+  border: 2px solid #185a9d;
+}
+
+.role-btn {
+  font-weight: 500;
+  background: #f7fafd;
+  color: #185a9d;
+  border: 1.5px solid #43cea2;
+  border-radius: 18px;
+  padding: 6px 18px;
+  font-size: 16px;
+  min-width: 72px;
+  min-height: 36px;
+  transition: all 0.2s;
+  box-shadow: none;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.role-btn.selected {
+  background: linear-gradient(90deg,#43cea2,#185a9d);
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px #185a9d22;
+}
+
+/* 高端主模块卡片式按钮样式 */
+.main-modules-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 32px;
+  margin: 60px auto 40px auto;
+  max-width: 1100px;
+  padding: 32px 0 32px 0;
+  background: rgba(255,255,255,0.6);
+  border-radius: 32px;
+  box-shadow: 0 8px 32px 0 rgba(67,206,162,0.10), 0 1.5px 6px 0 rgba(24,90,157,0.06);
+  backdrop-filter: blur(6px);
+}
+.module-card-pro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  min-height: 220px;
+  background: linear-gradient(135deg, #fafdff 60%, #e6f9f3 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px #43cea222;
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+  border: 2.5px solid transparent;
+  position: relative;
+  padding: 32px 18px 24px 18px;
+}
+.module-card-pro:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px #43cea244;
+  background: linear-gradient(135deg, #e6f9f3 60%, #fafdff 100%);
+  border: 2.5px solid #43cea2;
+}
+.module-card-pro-active {
+  border: 2.5px solid #185a9d;
+  box-shadow: 0 8px 32px #185a9d33;
+  background: linear-gradient(135deg, #43cea2 60%, #185a9d 100%);
+}
+.module-card-pro-icon {
+  margin-bottom: 18px;
+  margin-top: 2px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.module-card-pro-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #185a9d;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+.module-card-pro-active .module-card-pro-title {
+  color: #fff;
+  text-shadow: 0 2px 8px #185a9d33;
+}
+.module-card-pro-desc {
+  font-size: 1rem;
+  color: #2193b0;
+  text-align: center;
+  min-height: 44px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.module-card-pro-active .module-card-pro-desc {
+  color: #fff;
+  text-shadow: 0 2px 8px #185a9d33;
+}
+@media (max-width: 900px) {
+  .main-modules-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px 0;
+    padding: 12px 0 0 0;
+  }
+  .module-card-pro {
+    width: 90vw;
+    min-width: 0;
+    max-width: 400px;
+    padding: 24px 8vw 18px 8vw;
+  }
+}
+
+@media (max-width: 1400px) {
+  .app-card {
+    max-width: 98vw;
+    padding: 18px 2vw 12px 2vw;
+  }
+  .tab-content {
+    padding: 18px 2vw 12px 2vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .app-header {
+    padding: 24px 0 12px 0;
+  }
+  .app-card {
+    min-height: 400px;
+    padding: 8px 1vw 8px 1vw;
+  }
+  .tab-content {
+    padding: 8px 1vw 8px 1vw;
+  }
+  .result-area {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+  .app-tabs .ant-tabs-tab {
+    padding: 10px 16px !important;
+    font-size: 16px;
+  }
+  .tab-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .app-tabs .ant-tabs-tab {
+    padding: 8px 10px !important;
+    font-size: 15px;
+    margin-right: 2px !important;
+  }
+  .tab-btn {
+    font-size: 15px;
+  }
+} 
+
+.main-btn {
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 14px !important;
+  padding: 14px 38px !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  margin: 12px 0 0 0;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.18s, background 0.18s;
+  box-shadow: 0 2px 12px #185a9d33;
+  display: inline-block;
+}
+.main-btn:disabled {
+  background: #b2d8e6 !important;
+  color: #fff !important;
+  cursor: not-allowed !important;
+  opacity: 0.7;
+}
+.main-btn:hover, .main-btn:focus {
+  background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%) !important;
+  color: #fff !important;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 24px #43cea244;
+} 
+
+.quiz-loading-dialog {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(67, 206, 162, 0.10);
+  z-index: 1000;
+  min-height: 100vh;
+  width: 100vw;
+} 
+
+.user-level-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0 0 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  gap: 12px;
+}
+.user-level-letter {
+  display: inline-block;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: #fff;
+  border-radius: 16px;
+  padding: 6px 22px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  box-shadow: 0 2px 8px #185a9d22;
+  margin-right: 8px;
+  letter-spacing: 3px;
+}
+.user-level-desc {
+  color: #2193b0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+} 
+
+.option-btn {
+  width: 100%;
+  padding: 16px 0;
+  margin: 12px 0;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #e0e7ff 0%, #f0fdfa 100%);
+  box-shadow: 0 2px 8px rgba(80, 120, 255, 0.08);
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+.option-btn:hover {
+  box-shadow: 0 4px 16px rgba(80, 120, 255, 0.18);
+  transform: scale(1.03);
+}
+.option-btn.selected {
+  background: linear-gradient(90deg, #6366f1 0%, #38bdf8 100%);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 6px 24px rgba(80, 120, 255, 0.25);
+  border: 2px solid #38bdf8;
+} 
+
+/* 登录注册界面高端美化 */
+.login-bg-pro {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 40%, #43cea2 100%);
+  position: relative;
+  overflow: hidden;
+}
+.login-bg-pro::before {
+  content: '';
+  position: absolute;
+  left: 10vw;
+  top: 8vh;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle at 60% 40%, #43cea2cc 0%, #43cea200 80%);
+  filter: blur(32px);
+  z-index: 1;
+  pointer-events: none;
+}
+.login-bg-pro::after {
+  content: '';
+  position: absolute;
+  right: 8vw;
+  bottom: 6vh;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle at 40% 60%, #185a9dcc 0%, #185a9d00 80%);
+  filter: blur(32px);
+  z-index: 1;
+  pointer-events: none;
+}
+.login-card-pro {
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.85);
+  border-radius: 32px;
+  box-shadow: 0 12px 48px 0 rgba(24,90,157,0.18);
+  padding: 48px 40px 32px 40px;
+  min-width: 340px;
+  max-width: 96vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  margin-top: 8vh;
+}
+.login-title-pro {
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 24px #43cea244, 0 1.5px 6px #185a9d33;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.login-subtitle-pro {
+  font-size: 1.15rem;
+  color: #185a9d;
+  letter-spacing: 2px;
+  opacity: 0.85;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 0 2px 8px #43cea233;
+}
+.login-form-title-pro {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2193b0;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.login-input-pro {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #e0e7ff;
+  font-size: 1.08rem;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 8px rgba(80, 120, 255, 0.06);
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.login-input-pro:focus {
+  border: 1.5px solid #38bdf8;
+  box-shadow: 0 4px 16px rgba(80, 120, 255, 0.13);
+}
+.login-btn-pro {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #6366f1 0%, #38bdf8 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border: none;
+  margin-bottom: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(80, 120, 255, 0.18);
+  transition: all 0.18s;
+}
+.login-btn-pro:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.login-btn-pro:hover, .login-btn-pro:focus {
+  background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+  box-shadow: 0 8px 32px rgba(80, 120, 255, 0.22);
+  transform: scale(1.03);
+}
+.login-switch-pro {
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.login-link-pro {
+  color: #38bdf8;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.18s;
+  background: linear-gradient(90deg, #6366f1 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.login-link-pro:hover {
+  color: #185a9d;
+  -webkit-text-fill-color: #185a9d;
+}
+.login-footer-pro {
+  margin-top: 48px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.08rem;
+  letter-spacing: 2px;
+  text-align: center;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 8px #43cea233;
+}
+@media (max-width: 600px) {
+  .login-card-pro {
+    padding: 28px 8vw 18px 8vw;
+    min-width: 0;
+    border-radius: 18px;
+  }
+  .login-title-pro {
+    font-size: 2rem;
+  }
+} 

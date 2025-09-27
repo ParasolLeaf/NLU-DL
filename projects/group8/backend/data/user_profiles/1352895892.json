@@ -1,0 +1,749 @@
+{
+  "user_id": "135289589232",
+  "info": {
+    "name": "杨XX",
+    "email": "135289589232@qq.com"
+  },
+  "progress": {},
+  "history": {
+    "tests": [
+      {
+        "answers": [
+          "A. cold",
+          "B. He goes to school every day.",
+          "B. A big tree.",
+          "D. Apples."
+        ],
+        "result": {
+          "doubao": "2 级。理由：学生仅答对 1 题，所以评级为 2 级。"
+        }
+      },
+      {
+        "answers": [
+          "A. 苹果",
+          "B",
+          "B",
+          "B"
+        ],
+        "result": {}
+      },
+      {
+        "answers": [
+          "A. 苹果",
+          "B. He plays basketball.",
+          "B. Brown",
+          "B. A book"
+        ],
+        "result": {}
+      },
+      {
+        "answers": [
+          "A. cold",
+          "B",
+          "B",
+          "C"
+        ],
+        "result": {}
+      },
+      {
+        "answers": [
+          "A. A fruit.",
+          "B. She plays basketball.",
+          "C. A tree.",
+          "C. Read books."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "请提供正确答案，以便进行评级判断。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "A. am",
+          "A. Red",
+          "A. Bananas"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A，学生所有答案均正确，符合全对的标准。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "C. went",
+          "C",
+          "C"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E，学生四道题全部答错，符合中考水平的全错情况。"
+        }
+      },
+      {
+        "answers": [
+          "A. A fruit.",
+          "C. went",
+          "C. A big tree.",
+          "B. Playing football."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "请提供正确答案，以便进行评级。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "A. Do",
+          "B",
+          "B"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生答案全对，每个题目都选对了正确答案。"
+        }
+      },
+      {
+        "answers": [
+          "A. 苹果",
+          "D. You are a student.",
+          "B",
+          "B"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生四道题全部回答正确，答案与正确答案完全一致。"
+        }
+      },
+      {
+        "answers": [
+          "A. A fruit.",
+          "B. He goes to school every day.",
+          "C. A tree.",
+          "B. Bananas."
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生四道题全部回答正确，符合全对为 A（雅思难度）的标准。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "B. is",
+          "B",
+          "B. Bananas"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生答案完全正确，四个题目均回答正确，符合全对的标准（雅思难度）。"
+        }
+      },
+      {
+        "answers": [
+          "A. small",
+          "A. go",
+          "A. One",
+          "A. Bananas"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生的答案全对，每题都选择了正确答案，符合全对为 A（雅思难度）的标准。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "A. He play football every day.",
+          "A. One",
+          "A. Green"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，符合中考水平的全错情况。"
+        }
+      },
+      {
+        "answers": [
+          "A. A fruit.",
+          "A. He go to school every day.",
+          "A. In front of the house.",
+          "A. One."
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生答案全对，符合全对得 A 的规则。"
+        }
+      },
+      {
+        "answers": [
+          "A. 苹果",
+          "A. He go to school every day.",
+          "A. A big tree.",
+          "A. Bananas."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四个题全错，全错为 E（中考）。"
+        }
+      },
+      {
+        "answers": [
+          "A",
+          "A",
+          "A",
+          "A"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E，学生四个题全错，每个题都选了错误答案，符合中考水平的全错情况。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "A. go",
+          "A",
+          "A"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生四个答案全对，符合全对为 A（雅思难度）的评级标准。"
+        }
+      },
+      {
+        "answers": [
+          "A. A fruit.",
+          "A. She go to school every day.",
+          "A. White.",
+          "A. Apples."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四个题全错，答案均与正确答案不符。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "A. She play basketball every day.",
+          "A. A big dog.",
+          "A. Blue"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，符合中考水平的全错情况。"
+        }
+      },
+      {
+        "answers": [
+          "A. A fruit.",
+          "B. He goes to school every day.",
+          null,
+          "D. Grapes."
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 学生在第 3 题未作答，第 4 题答错，整体错 2 题，所以为 D（四级）。"
+        }
+      },
+      {
+        "answers": [
+          "A. 苹果",
+          "B. didn't",
+          "C. Brown",
+          "C. Oranges"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，全错为中考水平。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "C. went",
+          "B",
+          "D"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，错得较多，符合中考水平。"
+        }
+      },
+      {
+        "answers": [
+          "A. 苹果",
+          "C. I go to school.",
+          "B. Many birds.",
+          "A. Red."
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生四道题全部回答正确，答案与正确答案一致。"
+        }
+      },
+      {
+        "answers": [
+          "A. A fruit.",
+          "B. He plays football every day.",
+          "B. Black.",
+          "B. Bananas."
+        ],
+        "result": {
+          "level": "B",
+          "desc": "B. 学生在第 4 题答错，错 1 题，评级为 B（六级）。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "C. went",
+          "C. red",
+          "A. White"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四个题目全部答错，符合中考水平的全错情况。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "D. went",
+          "C. Black and white",
+          "A. A green apple"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，答案与正确答案完全不符。"
+        }
+      },
+      {
+        "answers": [
+          "有趣的",
+          "学校每天去我。",
+          "买东西",
+          "看电视"
+        ],
+        "result": {
+          "level": "B",
+          "desc": "B。理由：第 2 题有错误，翻译错误，整体作答情况为错 1 题，所以为 B 级（六级）。"
+        }
+      },
+      {
+        "answers": [
+          "D. A person.",
+          "A. He go to school every day.",
+          "B. A house.",
+          "D. Yellow."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，符合中考水平的全错情况。"
+        }
+      },
+      {
+        "answers": [
+          "D. A person.",
+          "A. He go to school every day.",
+          "B. A house.",
+          "D. Yellow."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，错在对基本英语知识的理解和运用上，符合中考水平。"
+        }
+      },
+      {
+        "answers": [
+          "D. A person.",
+          "A. He go to school every day.",
+          "B. A house.",
+          "D. Yellow."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，答案与正确答案完全不符，符合中考水平。"
+        }
+      },
+      {
+        "answers": [
+          "B. 香蕉",
+          "B. goes",
+          "B",
+          "B"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，全错为中考水平。"
+        }
+      },
+      {
+        "answers": [
+          "B. A color.",
+          "B. He plays football.",
+          "B. A house.",
+          "B. Bananas."
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 学生在 4 道题中错了 3 道，符合高考难度的错 3 题标准。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "B. goes",
+          "B. Many birds.",
+          "A. Oranges"
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 学生错了 3 道题，分别是第 2 题选 B 错误，第 3 题选 B 错误，第 4 题选 A 错误。"
+        }
+      },
+      {
+        "answers": [
+          "B. small",
+          "B. goes",
+          "B. A big tree.",
+          "B. The blue pen."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四个题全错，每题答案均与正确答案不同。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "C. went",
+          "A. Red",
+          "B. Bananas"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生四个答案全对，符合全对得 A（雅思难度）的规则。"
+        }
+      },
+      {
+        "answers": [
+          "B. warm",
+          "A. He play football every day.",
+          "B. A house.",
+          "B. Bananas."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，每题答案均与正确答案不同。"
+        }
+      },
+      {
+        "answers": [
+          "B. small",
+          "B. go",
+          "C",
+          "B"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生四道题全部答对，答案与正确答案一致。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "A. Do",
+          "A. A big tree",
+          "A. Red"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生四道题全部回答正确，答案与正确答案一致。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "A. go",
+          "A. A big apple tree.",
+          "A. A red pen."
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生答案全对，每题都选对了正确答案。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "B. He goes to school every day.",
+          "C. A big tree.",
+          "D. Neither apples nor oranges."
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 理由：学生在第 4 题答错，全错为 E（中考），错 1 题为 D（高考），本题错 1 题，所以为 D。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "A. am",
+          "A. green",
+          "A. White"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四个题全错，全错为 E（中考）。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "A. goes",
+          "A",
+          "A. A pen"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生全部回答正确，每个问题的答案都与正确答案一致。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "A. go",
+          "B. A big tree.",
+          "A. Bananas."
+        ],
+        "result": {
+          "level": "B",
+          "desc": "B. 学生有 1 道题答错，符合错 1 题为 B（六级）的规则。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "A. Do",
+          "A",
+          "A"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生答案全对，每题都选对了正确答案。"
+        }
+      },
+      {
+        "answers": [
+          "A. 苹果",
+          "A. He go to school every day.",
+          "A",
+          "A"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生在第 2 题和第 4 题答案错误，全错为 E（中考）。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "B. goes",
+          "B",
+          "B"
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 学生错了 3 道题，分别是第 2 题、第 3 题和第 4 题，符合错 3 题为 D（高考）的标准。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "A. She play football every day.",
+          "A. A big house.",
+          "A. Green"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 四个答案全错，且错误较为基础，符合中考水平。"
+        }
+      },
+      {
+        "answers": [
+          "A. 苹果",
+          "A. I am go to school.",
+          "A",
+          "B"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生在 4 道题中错了 3 道，全错为 E（中考）。"
+        }
+      },
+      {
+        "answers": [
+          "A. large",
+          "C. Are",
+          "C. blue",
+          "A"
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 学生在 4 道题中错了 3 道，错 3 题为 D（高考）。"
+        }
+      },
+      {
+        "answers": [
+          "B. small",
+          "A. am",
+          "A. green",
+          "A. White"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四个答案全错，符合中考水平的全错情况。"
+        }
+      },
+      {
+        "answers": [
+          "A. cold",
+          "D. She is play basketball every day.",
+          "D. A big flower.",
+          "B. Red"
+        ],
+        "result": {
+          "level": "A",
+          "desc": "A. 学生四道题全部回答正确，符合全对为 A（雅思难度）的标准。"
+        }
+      },
+      {
+        "answers": [
+          "B. long",
+          "B. He plays football every day.",
+          "B. Black",
+          "B. Blue"
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 学生在 4 道题中错了 3 道，错 3 题为 D（高考）。"
+        }
+      },
+      {
+        "answers": [
+          "B. 香蕉",
+          "B. He goes to school every day.",
+          "A",
+          "A"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，全错为中考水平。"
+        }
+      },
+      {
+        "answers": [
+          "C. thin",
+          "D. going",
+          "D",
+          "C. Oranges"
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，答案均不正确。"
+        }
+      },
+      {
+        "answers": [
+          "A. small",
+          "B. He plays football every day.",
+          "B",
+          "D"
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 学生在第 4 题答错，全错为 E（中考），错 1 题为 D（高考），此情况属于错 1 题。"
+        }
+      },
+      {
+        "answers": [
+          "B. aggravate",
+          "B. Unless",
+          "B. The wide range of products.",
+          "C. Some eggs."
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 学生错了 3 道题，全错为 E（中考），错 3 题为 D（高考）。"
+        }
+      },
+      {
+        "answers": [
+          "B. scarce",
+          "B. Because",
+          "B. The culture of a certain country.",
+          "B. A magazine."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 四道题全错，且答案均与正确答案不符。"
+        }
+      },
+      {
+        "answers": [
+          "B. complicate",
+          "C. If",
+          "B. Companies are not taking measures to reduce carbon footprint.",
+          "A. Milk and bread."
+        ],
+        "result": {
+          "level": "B",
+          "desc": "B. 学生在第一题中选了“complicate”，意思与正确答案“to make something clearer or easier to understand”相反；第二题选错；第三题选错；第四题选对。整体错 3 题，符合 D（高考）等级。"
+        }
+      },
+      {
+        "answers": [
+          "B. aggravate",
+          "B. Because",
+          "A. The increase in online shopping.",
+          "B. Walking their dogs."
+        ],
+        "result": {
+          "level": "D",
+          "desc": "D. 学生在第 1 题选了“aggravate”（使恶化），与正确答案“A（使某事不那么困难或更可忍受）”相反；第 2 题选了“Because”，而正确答案是“A（尽管）”；第 3 题选对了；第 4 题选了“Walking their dogs”，正确答案是“Some were playing football, some were walking their dogs, and others were having picnics”，只选了其中一项。整体错了 3 题，所以是 D（高考）。"
+        }
+      },
+      {
+        "answers": [
+          "B. scarce",
+          "B. Because",
+          "B. The wide range of products available.",
+          "B. Reading books."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，符合中考水平的全错情况。"
+        }
+      },
+      {
+        "answers": [
+          "A. plentiful",
+          "D. When",
+          "D. The features of a natural phenomenon.",
+          "C. To describe animal habitats."
+        ],
+        "result": {
+          "level": "E",
+          "desc": "E. 学生四道题全错，分别选择了与正确答案不同的选项，符合中考水平的全错情况。"
+        }
+      }
+    ],
+    "corrections": [],
+    "slang": [],
+    "vision": []
+  }
+}

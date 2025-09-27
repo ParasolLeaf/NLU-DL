@@ -1,0 +1,8 @@
+openai>=1.0
+requests>=2.28.0
+qianfan>=0.3.0
+sparkai>=0.1.0
+zhipuai>=2.0.0
+websocket-client>=1.6.0
+colorama>=0.4.6
+spark_ai_python

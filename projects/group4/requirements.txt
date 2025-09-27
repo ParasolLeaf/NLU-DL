@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+httpx
+python-dotenv
+gradio
+requests
+python-dateutil
+pytz
+playwright
+openai

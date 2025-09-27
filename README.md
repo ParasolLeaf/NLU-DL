@@ -79,7 +79,7 @@ headers = {
 
 ### projects: 往届优秀作业
 ├── group4/                 # 智能旅游规划  
-├── group8/                 # 多智能语言教学
+├── group8/                 # 多智能语言教学  
 └── publish soon ...        # 后续持续更新，敬请期待  
 
 ## 项目使用

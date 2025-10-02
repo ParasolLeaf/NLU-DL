@@ -1,0 +1,20 @@
+2025-09-17 14:14:38,582 - root - INFO - 正在启动Gradio服务...
+2025-09-17 14:14:38,762 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-09-17 14:14:38,853 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-09-17 14:14:39,506 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-09-17 14:15:05,205 - travel_planner_gui - INFO - 生成计划: 东京, 5天, 兴趣: 历史、美食, 预算: 舒适型, 出发日期: 2025-09-17
+2025-09-17 14:15:05,206 - travel_planner_gui - INFO - 景点搜索: 禁用, 数量: 5
+2025-09-17 14:15:46,016 - root - INFO - 服务已在 http://0.0.0.0:7860 启动
+2025-09-17 14:28:08,698 - root - INFO - 正在启动Gradio服务...
+2025-09-17 14:28:08,914 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-09-17 14:28:09,018 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-09-17 14:28:09,559 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-09-17 14:28:29,737 - travel_planner_gui - INFO - 生成计划: 东京, 5天, 兴趣: 美食、历史, 预算: 舒适型, 出发日期: 2025-09-17
+2025-09-17 14:28:29,738 - travel_planner_gui - INFO - 景点搜索: 禁用, 数量: 5
+2025-09-17 14:29:51,646 - travel_planner_gui - INFO - 成功收到旅行计划
+2025-09-17 14:46:25,415 - travel_planner_gui - INFO - 生成计划: 北京, 5天, 兴趣: 美食、历史, 预算: 舒适型, 出发日期: 2025-09-17
+2025-09-17 14:46:25,416 - travel_planner_gui - INFO - 景点搜索: 禁用, 数量: 5
+2025-09-17 14:47:32,486 - travel_planner_gui - INFO - 成功收到旅行计划
+2025-09-17 14:48:20,016 - travel_planner_gui - INFO - 生成计划: 北京, 5天, 兴趣: 美食、历史, 预算: 舒适型, 出发日期: 2025-09-17
+2025-09-17 14:48:20,016 - travel_planner_gui - INFO - 景点搜索: 禁用, 数量: 5
+2025-09-17 14:49:19,296 - travel_planner_gui - INFO - 成功收到旅行计划

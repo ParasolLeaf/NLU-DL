@@ -1,0 +1,150 @@
+2025-07-07 08:02:31,670 - travel_api - INFO - ÊÕµ½ÇëÇó: ±±¾©, 5Ìì, ³ö·¢ÈÕÆÚ: 2025-07-07
+2025-07-07 08:03:30,068 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 08:03:53,335 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 08:03:53,335 - api_integration - ERROR - ÎŞ·¨½âÎöQwenÏìÓ¦: {'choices': [{'message': {'role': 'assistant', 'content': 'ÒÔÏÂÊÇÎª2025Äê7ÔÂ7ÈÕ³ö·¢µÄÓÎ¿ÍÁ¿Éí¶¨ÖÆµÄ**5Ìì±±¾©ÂÃĞĞ¼Æ»®**£¬½áºÏ**Ñ§Ğ£ĞËÈ¤¡¢ÊæÊÊĞÍÔ¤Ëã**ÒÔ¼°**ÌìÆøÇé¿ö£¨¶àÔÆ×ªÀ×ÕóÓê£¬¸ßÎÂ¶àÓê£©**£¬ÎªÄú¾«ĞÄ°²ÅÅ£º\n\n---\n\n## 1. ÊµÓÃÌùÊ¿\n\n### \U0001f324\ufe0f ÌìÆø½¨Òé£º\n- **7ÔÂ7ÈÕ**£º¶àÔÆ×ªÀ×ÕóÓê£¬×¢ÒâĞ¯´øÓê¾ß¡£\n- **Î´À´¼¸Ìì**£º³ÖĞøÓĞÀ×ÕóÓêºÍ¸ßÎÂ£¬½¨ÒéÑ¡ÔñÊÒÄÚ»òÕÚÑô³¡Ëù»î¶¯¡£\n- **·ÀÊî½¨Òé**£ºÅå´÷ÕÚÑôÃ±¡¢Ê¹ÓÃ·ÀÉ¹Ëª¡¢ËæÉí´øË®Æ¿£¬±ÜÃâÖĞÎç12µãÖÁÏÂÎç3µã³¤Ê±¼ä»§Íâ»î¶¯¡£\n\n### \U0001f687 ½»Í¨½¨Òé£º\n- ±±¾©µØÌúÏµÍ³·¢´ï£¬ÊÊºÏ³ÇÊĞÄÚ³öĞĞ£¬½¨Òé¹ºÂò¡°±±¾©¹«½»¿¨¡±»òÊ¹ÓÃ¡°ÒÚÍ¨ĞĞ¡±APP¡£\n- ³ö×â³µ/ÍøÔ¼³µ·½±ã£¬µ«±Ü¿ª¸ß·åÊ±¶Î£¨ÈçÔç8-9µã¡¢Íí6-8µã£©¡£\n- ½¨ÒéÊ¹ÓÃµÎµÎ³öĞĞ»ò¸ßµÂµØÍ¼²éÑ¯ÊµÊ±Â·¿ö¡£\n\n### \U0001f389 ½ÚÈÕ»î¶¯£¨2025Äê7ÔÂ£©£º\n- ÎŞ´óĞÍ½ÚÈÕ£¬µ«±±¾©²©Îï¹İ¡¢¸ßĞ£¿ª·ÅÈÕµÈ¿É¹Ø×¢¡£\n- ¿ÉÌáÇ°²é¿´±±¾©¸ßĞ££¨ÈçÇå»ª¡¢±±´ó£©ÊÇ·ñ¿ª·Å²Î¹Û¡£\n\n---\n\n## 2. Ã¿ÈÕĞĞ³Ì°²ÅÅ\n\n### \u2705 µÚÒ»Ìì£º7ÔÂ7ÈÕ£¨ĞÇÆÚÒ»£©¡ª¡ªµÖ´ï+³õ²½Ì½Ë÷\n- **ÉÏÎç**£ºµÖ´ï±±¾©£¬Èë×¡¾Æµê£¬ÉÔ×÷ĞİÏ¢¡£\n- **ÏÂÎç**£ºÇ°Íù**¹ú¼Ò²©Îï¹İ**£¨Ãâ·Ñ£¬ĞèÔ¤Ô¼£©£¬ÁË½âÖĞ»ªÎÄÃ÷ÀúÊ·¡£\n- **ÍíÉÏ**£ºÔÚ**Ç°ÃÅ´ó½Ö**¸½½üÓÃ²Í£¬ÌåÑéÀÏ±±¾©·çÇé¡£\n\n### \u2705 µÚ¶şÌì£º7ÔÂ8ÈÕ£¨ĞÇÆÚ¶ş£©¡ª¡ªÀúÊ·ÎÄ»¯Ö®ÂÃ\n- **ÉÏÎç**£ºÓÎÀÀ**¹Ê¹¬²©ÎïÔº**£¨ÃÅÆ±Ô¼60Ôª£©£¬¸ĞÊÜÃ÷Çå»Ê¼Ò¹¬µî¡£\n- **ÏÂÎç**£º²Î¹Û**¾°É½¹«Ô°**£¬¸©î«¹Ê¹¬È«¾°¡£\n- **ÍíÉÏ**£ºÔÚ**Íõ¸®¾®´ó½Ö**Æ·³¢ÌØÉ«Ğ¡³Ô£¬Èç¿¾Ñ¼¡¢¶¹Ö­¶ù¡¢Â±Öó¡£\n\n### \u2705 µÚÈıÌì£º7ÔÂ9ÈÕ£¨ĞÇÆÚÈı£©¡ª¡ª¿Æ¼¼ÓëĞ£Ô°ÌåÑé\n- **ÉÏÎç**£ºÇ°Íù**Çå»ª´óÑ§/±±¾©´óÑ§**£¨ĞèÌáÇ°Ô¤Ô¼£©£¬²Î¹ÛĞ£Ô°£¬¸ĞÊÜÑ§Êõ·ÕÎ§¡£\n- **ÏÂÎç**£º²Î¹Û**ÖĞ¹ú¿ÆÑ§¼¼Êõ¹İ**£¨ÃÅÆ±Ô¼50Ôª£©£¬ÊÊºÏÑ§ÉúĞËÈ¤¡£\n- **ÍíÉÏ**£ºÔÚ¾©¶¼²ÍÌü»òÎ÷Ö±ÃÅ¸½½üÏíÓÃÍí²Í¡£\n\n### \u2705 µÚËÄÌì£º7ÔÂ10ÈÕ£¨ĞÇÆÚËÄ£©¡ª¡ª×ÔÈ»ÓëĞİÏĞ\n- **ÉÏÎç**£ºÇ°Íù**ÒÃºÍÔ°**£¨ÃÅÆ±Ô¼40Ôª£©£¬ĞÀÉÍ»Ê¼ÒÔ°ÁÖÃÀ¾°¡£\n- **ÏÂÎç**£ºÓÎÀÀ**Ô²Ã÷Ô°**£¨ÃÅÆ±Ô¼20Ôª£©£¬¸ĞÊÜÀúÊ·ÒÅ¼£¡£\n- **ÍíÉÏ**£ºÔÚ**ºóº£¾Æ°É½Ö**·ÅËÉ£¬ÌåÑé±±¾©Ò¹Éú»î¡£\n\n### \u2705 µÚÎåÌì£º7ÔÂ11ÈÕ£¨ĞÇÆÚÎå£©¡ª¡ªÎÄ»¯+¹ºÎï\n- **ÉÏÎç**£º²Î¹Û**Ê×¶¼²©Îï¹İ**£¨Ãâ·Ñ£¬ĞèÔ¤Ô¼£©£¬ÁË½â±±¾©ÀúÊ·¡£\n- **ÏÂÎç**£ºÇ°Íù**798ÒÕÊõÇø**£¬¸ĞÊÜµ±´úÒÕÊõ·ÕÎ§¡£\n- **ÍíÉÏ**£ºÔÚ**ÈıÀïÍÍ**³ÔÍí²Í£¬½áÊøÂÃ³Ì¡£\n\n---\n\n## 3. ÍÆ¼ö¾°µãºÍ»î¶¯\n\n| ¾°µãÃû³Æ         | ÀàĞÍ       | ÌØÉ«                             |\n|------------------|------------|----------------------------------|\n| ¹Ê¹¬²©ÎïÔº       | ÎÄ»¯ÀúÊ·   | ÊÀ½ç×î´ó»Ê¹¬½¨ÖşÈº               |\n| ¹ú¼Ò²©Îï¹İ       | ÎÄ»¯ÀúÊ·   | ÖĞ¹ú×î´óµÄ×ÛºÏĞÔ²©Îï¹İ           |\n| Çå»ª´óÑ§/±±¾©´óÑ§ | ¸ßĞ£Ğ£Ô°   | Ñ§Êõ·ÕÎ§Å¨ºñ£¬ÊÊºÏÑ§Éú²Î¹Û       |\n| ÖĞ¹ú¿ÆÑ§¼¼Êõ¹İ   | ¿Æ¼¼ÌåÑé   | »¥¶¯ĞÔÇ¿£¬ÊÊºÏÇàÉÙÄêÑ§Ï°         |\n| ÒÃºÍÔ°           | ×ÔÈ»/ÎÄ»¯  | »Ê¼ÒÔ°ÁÖ£¬ºş¹âÉ½É«ÓÅÃÀ           |\n| Ô²Ã÷Ô°           | ÀúÊ·ÒÅ¼£   | ¡°ÍòÔ°Ö®Ô°¡±£¬³äÂúÀúÊ·¸Ğ           |\n| 798ÒÕÊõÇø        | ÒÕÊõÎÄ»¯   | µ±´úÒÕÊõ¾Û¼¯µØ                   |\n\n---\n\n## 4. ²ÍÒû½¨Òé\n\n### \U0001f35c ÍÆ¼ö²ÍÌü£¨ÊæÊÊĞÍ£©\n- **È«¾ÛµÂ£¨Ç°ÃÅµê£©**£ºÕı×Ú¿¾Ñ¼£¬ÊÊºÏÕıÊ½ÓÃ²Í¡£\n- **´ó¶­£¨¹¤Ìåµê£©**£º¸ß¶ËÖĞ²Í£¬ÊÊºÏÌØÊâ³¡ºÏ¡£\n- **»¤¹úËÂĞ¡³Ô**£ºµØµÀÀÏ±±¾©·çÎ¶£¬¼Û¸ñÇ×Ãñ¡£\n- **Ğ¡µõÀæÌÀ£¨ÄÏÂà¹ÄÏïµê£©**£º´´Òâ¾©Î¶²Ë£¬»·¾³ÎÄÒÕ¡£\n- **¶«À´Ë³£¨Å£½Öµê£©**£ºäÌÑòÈâÀÏ×ÖºÅ£¬ÊÊºÏÅóÓÑ¾Û²Í¡£\n\n### \U0001f375 ÍÆ¼öÒûÆ·\n- **±ùÕòËáÃ·ÌÀ**£º½âÊîÉñÆ÷\n- **ÜÔÀò»¨²è**£º±±¾©´«Í³ÒûÆ·\n- **Á¹²è**£ºÊÊºÏÑ×ÈÈÌìÆøÒûÓÃ\n\n---\n\n## 5. ×¡ËŞÍÆ¼ö£¨ÊæÊÊĞÍ£©\n\n| ¾ÆµêÃû³Æ         | µØÀíÎ»ÖÃ     | ¼Û¸ñÇø¼ä£¨Ã¿Íí£© | ÌØÉ«                     |\n|------------------|--------------|------------------|--------------------------|\n| ±±¾©ÀöË¼¿¨¶û¶Ù¾Æµê | Íõ¸®¾®       | \xa51500-2000       | ºÀ»ª¾Æµê£¬·şÎñÒ»Á÷       |\n| ±±¾©°ØÔÃ¾Æµê      | ³¯ÑôÇø       | \xa51200-1800       | ³ÇÊĞ¾°¹Û£¬¸ß¶ËÉÌÎñ       |\n| ±±¾©½ğÈÚ½ÖÀöË¼¿¨¶û¶Ù | ½ğÈÚ½Ö       | \xa51300-1700       | ºÀ»ª£¬¿¿½üÉÌÒµÖĞĞÄ       |\n| ±±¾©»ª¶ûµÀ·ò¾Æµê  | ³¯ÑôÇø       | \xa51000-1500       | ºÀ»ª£¬ÊÊºÏ¼ÒÍ¥³öÓÎ       |\n| ±±¾©Ïã¸ñÀïÀ­´ó¾Æµê | ¶«³ÇÇø       | \xa5800-1200        | ĞÔ¼Û±È¸ß£¬¿¿½ü¾°µã       |\n\n> **ÌáÊ¾**£º½¨ÒéÌáÇ°Í¨¹ıĞ¯³Ì¡¢Booking.com»òÃÀÍÅÔ¤¶©£¬È·±£¼Û¸ñÓÅ»İºÍ·¿¼ä³ä×ã¡£\n\n---\n\n## 6. Ô¤Ëã·ÖÅä½¨Òé£¨ÊæÊÊĞÍ£¬5Ìì£©\n\n| ÏîÄ¿             | Ô¤Ëã£¨ÈËÃñ±Ò£© | ËµÃ÷                                   |\n|------------------|----------------|----------------------------------------|\n| »úÆ±/»ğ³µÆ±      | \xa52000-3000     | ¸ù¾İ³ö·¢µØ²»Í¬¸¡¶¯                    |\n| ×¡ËŞ£¨5Íí£©      | \xa54000-6000     | Ñ¡ÔñÊæÊÊĞÍ¾Æµê                        |\n| ²ÍÒû£¨Ã¿ÈÕ\xa5200£©| \xa51000          | Ã¿ÌìÔ¼200Ôª£¬º¬Ôç²Í¡¢Îç²Í¡¢Íí²Í       |\n| ÃÅÆ±¼°»î¶¯       | \xa51000-1500     | °üÀ¨¹Ê¹¬¡¢ÒÃºÍÔ°¡¢¿Æ¼¼¹İµÈ            |\n| ½»Í¨£¨µØÌú+´ò³µ£©| \xa5500           | ±±¾©ÊĞÄÚ½»Í¨·ÑÓÃ                      |\n| ÆäËû£¨¼ÍÄîÆ·µÈ£© | \xa5300-500       | ÓÃÓÚ¹ºÂòĞ¡ÀñÎï»ò¼ÍÄîÆ·                |\n| **×Ü¼Æ**         | **\xa58800-12000**| ¸ù¾İÊµ¼ÊÏû·Ñ¸¡¶¯                       |\n\n---\n\n## 7. ³ö·¢Ç°×¼±¸½¨Òé\n\n### \U0001f4c4 ±Ø±¸Ö¤¼ş£º\n- ÓĞĞ§Éí·İÖ¤¼ş£¨Éí·İÖ¤»ò»¤ÕÕ£©\n- ÈôÎª¹ú¼ÊÓÎ¿Í£¬Ğè³ÖÓĞÓĞĞ§Ç©Ö¤\n- µç×Ó°æĞĞ³Ìµ¥£¨´òÓ¡»ò±£´æÔÚÊÖ»ú£©\n\n### \U0001f9f4 ½¡¿µÓë°²È«£º\n- ±£³ÖÁ¼ºÃ×÷Ï¢£¬±ÜÃâÂÃÍ¾Æ£ÀÍ\n- Ğ¯´ø³£ÓÃÒ©Æ·£¨¸ĞÃ°Ò©¡¢³¦Î¸Ò©¡¢´´¿ÉÌùµÈ£©\n- ×¢ÒâÒûÊ³ÎÀÉú£¬±ÜÃâÊ³ÓÃ²»½àÊ³Îï\n\n### \U0001f9f3 ĞĞÀî½¨Òé£º\n- Çá±ãÒÂÎï£¨¶ÌĞä¡¢±¡ÍâÌ×£©¡¢Ã±×Ó¡¢Ì«Ñô¾µ\n- Óê¾ß£¨ÕÛµşÉ¡»òÓêÒÂ£©\n- ³äµç±¦¡¢³äµçÏß¡¢Ïà»ú/ÊÖ»ú\n- ·ÀÉ¹ÓÃÆ·£¨·ÀÉ¹Ëª¡¢±£ÊªÅçÎí£©\n\n### \U0001f4f1 ¼¼Êõ×¼±¸£º\n- ÏÂÔØ¡°¸ßµÂµØÍ¼¡±¡¢¡°°Ù¶ÈµØÍ¼¡±¡¢¡°ÒÚÍ¨ĞĞ¡±µÈApp\n- ×¢²á¡°¹Ê¹¬²©ÎïÔº¡±¡¢¡°Ê×¶¼²©Îï¹İ¡±µÈ¹Ù·½¹«ÖÚºÅ£¬ÌáÇ°Ô¤Ô¼ÃÅÆ±\n- ±£´æ½ô¼±ÁªÏµ·½Ê½£¨Ò½Ôº¡¢¾¯²ì¡¢Ê¹Áì¹İµÈ£©\n\n---\n\nÈçÓĞĞèÒª£¬ÎÒ¿ÉÒÔ¸ù¾İÄúµÄ¾ßÌå³ö·¢µØ¡¢º½°àÊ±¼ä¡¢Æ«ºÃ¿ÚÎ¶µÈ½øÒ»²½ÓÅ»¯ĞĞ³Ì¡£×£ÄúÔÚ±±¾©¶È¹ıÒ»¸öÓä¿ì¶ø³äÊµµÄ¼ÙÆÚ£¡\U0001f338'}, 'finish_reason': 'stop', 'index': 0, 'logprobs': None}], 'object': 'chat.completion', 'usage': {'prompt_tokens': 503, 'completion_tokens': 1850, 'total_tokens': 2353, 'prompt_tokens_details': {'cached_tokens': 0}}, 'created': 1751875432, 'system_fingerprint': None, 'model': 'qwen-turbo', 'id': 'chatcmpl-776a3818-d0eb-9bd5-8421-673deccee332'}
+2025-07-07 08:09:45,354 - travel_api - INFO - ÊÕµ½ÇëÇó: ±±¾©, 5Ìì, ³ö·¢ÈÕÆÚ: 2025-07-07
+2025-07-07 08:10:22,218 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 08:10:56,111 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-08 16:16:26,850 - travel_api - INFO - ÊÕµ½ÇëÇó: ±±¾©, 5Ìì, ³ö·¢ÈÕÆÚ: 2025-07-09
+2025-07-08 16:16:26,858 - travel_service - INFO - ¿ªÊ¼»ñÈ¡ ±±¾© ÌìÆøĞÅÏ¢
+2025-07-08 16:16:26,858 - weather_search - INFO - ¿ªÊ¼ËÑË÷ÌìÆø: ±±¾©ÌìÆø
+2025-07-08 16:16:31,177 - weather_search - INFO - ·ÃÎÊ°Ù¶ÈËÑË÷: https://www.baidu.com/s?wd=±±¾©ÌìÆø
+2025-07-08 16:16:34,076 - weather_search - INFO - °Ù¶ÈËÑË÷½á¹ûÒ³Ãæ½âÎöÍê³É
+2025-07-08 16:16:34,080 - weather_search - INFO - ¿ªÊ¼ÌáÈ¡ËÑË÷½á¹û
+2025-07-08 16:16:34,118 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ÎŞ±êÌâ
+2025-07-08 16:16:34,943 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ÎŞ±êÌâ
+2025-07-08 16:16:34,951 - weather_search - ERROR - ·ÃÎÊÒ³ÃæÊ§°Ü: ÎŞ±êÌâ - Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "/s?wd=%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A524%E5%B0%8F%E6%97%B6%E8%AF%A6%E6%83%85%E8%BD%AF%E4%BB%B6&usm=1&ie=utf-8&rsv_pq=9082504400001ff6&oq=%E5%8C%97%E4%BA%AC%E5%A4%A9%E6%B0%94&rsv_t=12ffXIyk5%2BF9sGh%2FVsAR4F1SFOqGpCCE%2BiY0eXqUj9grw7LnyPY5cv%2BSbf4&rsf=101634504&rsv_dl=0_prs_28608_1", waiting until "load"
+
+2025-07-08 16:16:34,951 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ¡¾±±¾©ÌìÆøÔ¤±¨15Ìì_±±¾©ÌìÆøÔ¤±¨15Ìì²éÑ¯¡¿-ÖĞ¹úÌìÆøÍø
+2025-07-08 16:16:37,360 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾©ÌìÆø - °Ù¼ÒºÅ
+2025-07-08 16:16:39,396 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ¡¾±±¾©ÌìÆøÔ¤±¨¡¿±±¾©ÌìÆøÔ¤±¨Ò»ÖÜ_±±¾©ÌìÆøÔ¤±¨7Ìì¡¢15Ìì¡¢40...
+2025-07-08 16:16:41,350 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾©ÌìÆøÔ¤±¨40Ìì_±±¾©ÌìÆøÔ¤±¨40Ìì²éÑ¯,±±¾©Î´À´40ÌìÌìÆøÔ¤±¨...
+2025-07-08 16:16:43,764 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ¡¾±±¾©ÌìÆøÔ¤±¨¡¿±±¾©ÌìÆøÔ¤±¨Ò»ÖÜ_±±¾©ÌìÆøÔ¤±¨7Ìì¡¢15Ìì¡¢40...
+2025-07-08 16:16:46,164 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ¡¾±±¾©ÌìÆøÔ¤±¨¡¿±±¾©ÌìÆøÔ¤±¨Ò»ÖÜ_±±¾©ÌìÆøÔ¤±¨7Ìì¡¢15Ìì¡¢40Ìì...
+2025-07-08 16:16:47,103 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ¡¾±±¾©ÌìÆøÔ¤±¨¡¿±±¾©ÌìÆøÔ¤±¨Ò»ÖÜ_±±¾©ÌìÆøÔ¤±¨7Ìì¡¢15Ìì¡¢40...
+2025-07-08 16:16:48,744 - weather_search - INFO - ·ÃÎÊÁ´½Ó: ¡¾±±¾©ÌìÆøÔ¤±¨¡¿±±¾©ÌìÆøÔ¤±¨Ò»ÖÜ_±±¾©ÌìÆøÔ¤±¨7Ìì¡¢15Ìì¡¢40...
+2025-07-08 16:16:51,502 - weather_search - INFO - ¿ªÊ¼´¦Àí 10 ¸ö½á¹û
+2025-07-08 16:16:51,502 - weather_search - INFO - ¿ªÊ¼µ÷ÓÃQwenÄ£ĞÍÕûºÏÌìÆøĞÅÏ¢
+2025-07-08 16:17:19,527 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 16:17:19,544 - weather_search - INFO - ÌìÆøËÑË÷Íê³É£¬ºÄÊ± 52.69 Ãë
+2025-07-08 16:17:19,822 - travel_service - INFO - ÌìÆøĞÅÏ¢»ñÈ¡Íê³É£¬ºÄÊ± 52.96 Ãë
+2025-07-08 16:17:19,822 - travel_service - INFO - ¿ªÊ¼ËÑË÷ ±±¾© ¾°µãĞÅÏ¢
+2025-07-08 16:17:19,822 - destination_search - INFO - ¿ªÊ¼ËÑË÷Ä¿µÄµØ: ±±¾©, ĞèÒª¾°µãÊı: 5
+2025-07-08 16:17:21,492 - destination_search - INFO - ·ÃÎÊ°Ù¶ÈËÑË÷: https://www.baidu.com/s?wd=±±¾©
+2025-07-08 16:17:24,064 - destination_search - INFO - °Ù¶ÈËÑË÷½á¹ûÒ³Ãæ¼ÓÔØÍê³É
+2025-07-08 16:17:24,581 - destination_search - INFO - Ò³ÃæÄÚÈİ½âÎöÍê³É
+2025-07-08 16:17:24,581 - destination_search - INFO - ¿ªÊ¼ÌáÈ¡ËÑË÷½á¹û£¬Ä¿±êÊıÁ¿: 5
+2025-07-08 16:17:24,593 - destination_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾©ÊĞ - °Ù¶È°Ù¿Æ
+2025-07-08 16:17:29,144 - destination_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾©ÊĞÈËÃñÕş¸®ÃÅ»§ÍøÕ¾
+2025-07-08 16:17:32,014 - destination_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾© - ÊÓÆµ´óÈ« - ¸ßÇåÔÚÏß¹Û¿´
+2025-07-08 16:17:32,027 - destination_search - ERROR - ·ÃÎÊÒ³ÃæÊ§°Ü: ±±¾© - ÊÓÆµ´óÈ« - ¸ßÇåÔÚÏß¹Û¿´ - Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "/sf/vsearch?pd=video&wd=%E5%8C%97%E4%BA%AC&tn=vsearch&lid=88134dc500051e26&ie=utf-8&rsv_pq=88134dc500051e26&rsv_spt=5&rsv_bp=1&f=8&atn=index", waiting until "load"
+
+2025-07-08 16:17:32,027 - destination_search - INFO - ·ÃÎÊÁ´½Ó: 
+
+±±¾©ÊĞµØÍ¼_°Ù¶ÈµØÍ¼
+                    
+
+2025-07-08 16:17:34,251 - destination_search - INFO - ·ÃÎÊÁ´½Ó: 
+
+±±¾© - ÈÏÖ¤Æ·ÅÆ
+                    
+
+2025-07-08 16:17:35,457 - destination_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾©\xa0-\xa0°Ù¶ÈÍ¼Æ¬
+2025-07-08 16:17:39,585 - destination_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾©ÊĞÈËÃñÕş¸®ÃÅ»§ÍøÕ¾
+2025-07-08 16:17:40,583 - destination_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾©ÊĞÕşÎñ·şÎñÍø
+2025-07-08 16:17:44,533 - destination_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾©ÊĞ³ÇÊĞ¹ÜÀíÎ¯Ô±»á
+2025-07-08 16:17:46,152 - destination_search - INFO - ·ÃÎÊÁ´½Ó: ±±¾©ÊĞ¾­¼ÃºÍĞÅÏ¢»¯¾Ö
+2025-07-08 16:17:49,131 - destination_search - INFO - ¿ªÊ¼´¦Àí 5 ¸ö½á¹û
+2025-07-08 16:17:49,132 - destination_search - INFO - ¿ªÊ¼µ÷ÓÃQwenÄ£ĞÍÕûºÏ¾°µãĞÅÏ¢
+2025-07-08 16:18:22,468 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 16:18:22,472 - destination_search - INFO - ¾°µãËÑË÷Íê³É£¬ºÄÊ± 62.65 Ãë
+2025-07-08 16:18:22,744 - travel_service - INFO - »ñÈ¡µ½ 5 ¸ö¾°µãĞÅÏ¢
+2025-07-08 16:18:22,746 - travel_service - INFO - ¿ªÊ¼¹¹½¨ÌáÊ¾´Ê
+2025-07-08 16:18:22,746 - travel_service - INFO - ¿ªÊ¼Éú³ÉÂÃĞĞ¼Æ»®
+2025-07-08 16:18:48,363 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-08 16:25:05,804 - travel_api - INFO - ÊÕµ½ÇëÇó: ±±¾©, 5Ìì, ³ö·¢ÈÕÆÚ: 2025-07-09
+2025-07-08 16:25:54,459 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-08 16:26:16,799 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-09 07:32:54,352 - travel_api - INFO - ÊÕµ½ÇëÇó: , 2Ìì, ³ö·¢ÈÕÆÚ: 2025-07-09
+2025-07-09 07:33:19,273 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 07:33:46,079 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-09 07:33:48,157 - travel_api - INFO - ÊÕµ½ÇëÇó: ±±¾©, 2Ìì, ³ö·¢ÈÕÆÚ: 2025-07-09
+2025-07-09 07:34:29,832 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 07:34:56,096 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-09 07:41:32,875 - travel_api - INFO - ÊÕµ½ÇëÇó: ±±¾©, 1Ìì, ³ö·¢ÈÕÆÚ: 2025-07-09
+2025-07-09 07:42:24,752 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 07:42:48,452 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-09 08:06:18,965 - travel_api - INFO - ÊÕµ½ÇëÇó: ±±¾©, 1Ìì, ³ö·¢ÈÕÆÚ: 2025-07-09
+2025-07-09 08:07:05,533 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 08:07:31,732 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-09 09:04:59,628 - travel_api - INFO - ÊÕµ½ÇëÇó: ±±¾©, 1Ìì, ³ö·¢ÈÕÆÚ: 2025-07-09
+2025-07-09 09:05:50,171 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 09:06:09,231 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-09 09:06:49,878 - travel_api - INFO - ÊÕµ½ÇëÇó: °ÍÀè, 5Ìì, ³ö·¢ÈÕÆÚ: 2025-07-09
+2025-07-09 09:08:58,791 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-09 09:09:33,809 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-10 14:27:53,480 - travel_api - INFO - ÊÕµ½ÇëÇó: Â×¶Ø, 3Ìì, ³ö·¢ÈÕÆÚ: 2025-07-10
+2025-07-10 14:29:18,561 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 14:29:46,920 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-10 19:39:22,811 - travel_api - INFO - ÊÕµ½ÇëÇó: ÏÃÃÅ, 3Ìì, ³ö·¢ÈÕÆÚ: 2025-07-10
+2025-07-10 19:40:14,302 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 19:40:48,809 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-10 19:43:28,445 - travel_api - INFO - ÊÕµ½ÇëÇó: °ÍÀè, 5Ìì, ³ö·¢ÈÕÆÚ: 2025-07-10
+2025-07-10 19:45:00,714 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 19:45:40,861 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-10 20:35:48,344 - travel_api - INFO - ÊÕµ½ÇëÇó: µÏ°İ, 3Ìì, ³ö·¢ÈÕÆÚ: 2025-07-10
+2025-07-10 20:37:00,659 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 20:37:35,370 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-10 21:29:43,501 - travel_api - INFO - ÊÕµ½ÇëÇó: µÏ°İ, 3Ìì, ³ö·¢ÈÕÆÚ: 2025-07-10
+2025-07-10 21:30:54,715 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 22:04:40,072 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-16 13:32:57,542 - travel_api - INFO - ÊÕµ½ÇëÇó: ¶«¾©, 3Ìì, ³ö·¢ÈÕÆÚ: 2025-07-16
+2025-07-16 13:34:38,308 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-16 13:35:57,871 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-26 20:20:45,047 - travel_api - INFO - ÊÕµ½ÇëÇó: ÉÏº£, 3Ìì, ³ö·¢ÈÕÆÚ: 2025-07-26
+2025-07-26 20:21:21,977 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-26 20:21:55,701 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-26 20:28:16,434 - travel_api - INFO - ÊÕµ½ÇëÇó: ÉÏº£, 4Ìì, ³ö·¢ÈÕÆÚ: 2025-07-29
+2025-07-26 20:28:50,247 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-26 20:29:22,937 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-26 22:28:07,628 - travel_api - INFO - ÊÕµ½ÇëÇó: Å¦Ô¼, 3Ìì, ³ö·¢ÈÕÆÚ: 2025-07-26
+2025-07-26 22:29:14,489 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-26 22:29:46,128 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-09-17 14:15:05,277 - travel_api - INFO - æ”¶åˆ°è¯·æ±‚: ä¸œäº¬, 5å¤©, å‡ºå‘æ—¥æœŸ: 2025-09-17
+2025-09-17 14:15:49,920 - travel_service - ERROR - ç”Ÿæˆæ—…è¡Œè®¡åˆ’å¤±è´¥: Browser.close: Connection closed while reading from the driver
+2025-09-17 14:15:49,920 - travel_api - ERROR - ç”Ÿæˆæ—…è¡Œè®¡åˆ’å¤±è´¥
+Traceback (most recent call last):
+  File "/home/wuyt/NLUProject/group4/main.py", line 37, in create_travel_plan
+    plan = await generate_travel_plan(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wuyt/NLUProject/group4/modules/travel_service.py", line 26, in generate_travel_plan
+    web_data_weather = await search_baidu_and_scrape_with_playwright(f"{clean_dest}å¤©æ°”")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wuyt/NLUProject/group4/modules/draft_weather.py", line 80, in search_baidu_and_scrape_with_playwright
+    await browser.close()
+  File "/home/wuyt/.conda/envs/group4/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 14234, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wuyt/.conda/envs/group4/lib/python3.12/site-packages/playwright/_impl/_browser.py", line 241, in close
+    raise e
+  File "/home/wuyt/.conda/envs/group4/lib/python3.12/site-packages/playwright/_impl/_browser.py", line 238, in close
+    await self._channel.send("close", None, {"reason": reason})
+  File "/home/wuyt/.conda/envs/group4/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wuyt/.conda/envs/group4/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+2025-09-17 14:28:29,809 - travel_api - INFO - æ”¶åˆ°è¯·æ±‚: ä¸œäº¬, 5å¤©, å‡ºå‘æ—¥æœŸ: 2025-09-17
+2025-09-17 14:29:27,673 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 14:29:51,635 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-09-17 14:46:25,492 - travel_api - INFO - æ”¶åˆ°è¯·æ±‚: åŒ—äº¬, 5å¤©, å‡ºå‘æ—¥æœŸ: 2025-09-17
+2025-09-17 14:47:06,012 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 14:47:32,473 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-09-17 14:48:20,081 - travel_api - INFO - æ”¶åˆ°è¯·æ±‚: åŒ—äº¬, 5å¤©, å‡ºå‘æ—¥æœŸ: 2025-09-17
+2025-09-17 14:48:56,709 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-17 14:49:19,287 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"

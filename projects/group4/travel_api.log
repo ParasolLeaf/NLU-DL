@@ -1,0 +1,108 @@
+2025-07-05 15:31:33,945 - travel_api - INFO - 收到请求: 北京, 5天
+2025-07-05 15:31:33,945 - travel_service - INFO - 生成提示词: 
+        你是一个专业的旅行规划师，请为游客创建一份5天的北京旅行计划。
+        游客兴趣：文博
+        预算范围：舒适型
+        当前旅行建议：关于北京的最新旅行信息：热门景点、当地美食推荐等...
+
+        请按以下格式规划：
+        1. 每日行程安排（上午、下午、晚上）
+        2. 推荐景点和活动
+        3. 餐饮建议
+ ...
+2025-07-05 15:31:33,945 - api_integration - ERROR - Qwen API Key未配置
+2025-07-05 15:34:46,612 - travel_api - INFO - 收到请求: 北京, 5天
+2025-07-05 15:34:46,613 - travel_service - INFO - 生成提示词: 
+        你是一个专业的旅行规划师，请为游客创建一份5天的北京旅行计划。
+        游客兴趣：历史
+        预算范围：舒适型
+        当前旅行建议：关于北京的最新旅行信息：热门景点、当地美食推荐等...
+
+        请按以下格式规划：
+        1. 每日行程安排（上午、下午、晚上）
+        2. 推荐景点和活动
+        3. 餐饮建议
+ ...
+2025-07-05 15:35:06,128 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-06 18:24:50,584 - travel_api - INFO - 收到请求: 北京, 5天
+2025-07-06 18:24:50,586 - travel_service - INFO - 生成提示词: 
+        你是一个专业的旅行规划师，请为游客创建一份5天的北京旅行计划。
+        游客兴趣：美食
+        预算范围：舒适型
+        当前旅行建议：关于北京的最新旅行信息：热门景点、当地美食推荐等...
+
+        请按以下格式规划：
+        1. 每日行程安排（上午、下午、晚上）
+        2. 推荐景点和活动
+        3. 餐饮建议
+ ...
+2025-07-06 18:25:14,198 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-06 18:35:10,659 - travel_api - INFO - 收到请求: 北京, 5天
+2025-07-06 18:35:10,661 - travel_service - INFO - 生成提示词: 
+        你是一个专业的旅行规划师，请为游客创建一份5天的北京旅行计划。
+        游客兴趣：学校
+        预算范围：舒适型
+        当前旅行建议：关于北京的最新旅行信息：热门景点、当地美食推荐等...
+
+        请按以下格式规划：
+        1. 每日行程安排（上午、下午、晚上）
+        2. 推荐景点和活动
+        3. 餐饮建议
+ ...
+2025-07-06 18:35:30,258 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-06 18:36:05,358 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-07 02:41:14,834 - travel_api - INFO - 收到请求: 北京, 5天, 出发日期: 2025-07-07
+2025-07-07 02:41:14,842 - travel_service - ERROR - 生成旅行计划失败: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2025-07-07 02:41:14,842 - travel_api - ERROR - 生成旅行计划失败
+Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\pythonProject\ai_project02\main.py", line 41, in create_travel_plan
+    plan = await generate_travel_plan(
+  File "C:\Users\dell\PycharmProjects\pythonProject\ai_project02\modules\travel_service.py", line 74, in generate_travel_plan
+    web_data = search_baidu_and_scrape_with_playwright(clean_dest)
+  File "C:\Users\dell\PycharmProjects\pythonProject\ai_project02\modules\draft_weather.py", line 21, in search_baidu_and_scrape_with_playwright
+    with sync_playwright() as p:
+  File "C:\Users\dell\PycharmProjects\pythonProject\venv\lib\site-packages\playwright\sync_api\_context_manager.py", line 47, in __enter__
+    raise Error(
+playwright._impl._errors.Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2025-07-07 02:46:07,857 - travel_api - INFO - 收到请求: 北京, 5天, 出发日期: 2025-07-07
+2025-07-07 02:46:07,857 - travel_service - ERROR - 生成旅行计划失败: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2025-07-07 02:46:07,857 - travel_api - ERROR - 生成旅行计划失败
+Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\pythonProject\ai_project02\main.py", line 41, in create_travel_plan
+    plan = await generate_travel_plan(
+  File "C:\Users\dell\PycharmProjects\pythonProject\ai_project02\modules\travel_service.py", line 74, in generate_travel_plan
+    web_data = search_baidu_and_scrape_with_playwright(clean_dest)
+  File "C:\Users\dell\PycharmProjects\pythonProject\ai_project02\modules\draft_weather.py", line 21, in search_baidu_and_scrape_with_playwright
+    with sync_playwright() as p:
+  File "C:\Users\dell\PycharmProjects\pythonProject\venv\lib\site-packages\playwright\sync_api\_context_manager.py", line 47, in __enter__
+    raise Error(
+playwright._impl._errors.Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2025-07-07 02:54:05,057 - travel_api - INFO - 收到请求: 北京, 5天, 出发日期: 2025-07-07
+2025-07-07 02:54:51,633 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 02:54:51,930 - travel_service - INFO - 生成提示词: 
+        你是一个专业的旅行规划师，请为2025-07-07出发的游客创建一份5天的北京旅行计划。
+        游客兴趣：学校
+        预算范围：舒适型
+        旅行季节：夏季
+        当前旅行建议：=== 搜索整合结果 ===
+根据您提供的信息,我总结以下几点关于北京市的关键信息:
+
+1. 北京是中国的首都,是国家的政治中心、文化中心、国际交往中心和科技创新中...
+2025-07-07 02:55:14,669 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-07 02:57:09,461 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"
+2025-07-07 02:59:14,782 - travel_api - INFO - 收到请求: 北京, 5天, 出发日期: 2025-07-07
+2025-07-07 02:59:56,477 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-07 02:59:56,769 - travel_service - INFO - 生成提示词: 
+        你是一个专业的旅行规划师，请为2025-07-07出发的游客创建一份5天的北京旅行计划。
+        游客兴趣：学校
+        预算范围：舒适型
+        旅行季节：夏季
+        当前旅行建议（天气情况，请务必考虑）：=== 搜索整合结果 ===
+根据您提供的信息,我总结以下几点关于北京市的关键信息:
+
+1. 北京是中国的首都,是全国的政治中心、文化中心、...
+2025-07-07 03:00:21,980 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation "HTTP/1.1 200 OK"

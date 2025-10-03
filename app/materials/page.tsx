@@ -34,13 +34,18 @@ export default function MaterialsPage() {
   const filteredMaterials = materials
 
   const handleDownload = (material: any) => {
-    // 在静态模式下，显示提示信息
-    alert("文件下载功能在静态网站模式下不可用")
+    // 直接下载文件
+    const link = document.createElement('a')
+    link.href = `/NLU-DL/files/${material.filename}`
+    link.download = material.filename
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   const handlePreview = (material: any) => {
-    // 在静态模式下，显示提示信息
-    alert("文件预览功能在静态网站模式下不可用")
+    // 在新窗口打开文件
+    window.open(`/NLU-DL/files/${material.filename}`, '_blank')
   }
 
   return (

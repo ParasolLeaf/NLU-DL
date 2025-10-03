@@ -56,11 +56,13 @@ export default function ProjectsPage() {
   const exampleFiles = staticExampleFiles
 
   const handleDownloadFile = (file: any) => {
-    // 模拟文件下载
+    // 直接下载文件
     const link = document.createElement('a')
-    link.href = `/files/${file.filename}`
+    link.href = `/NLU-DL/files/${file.filename}`
     link.download = file.filename
+    document.body.appendChild(link)
     link.click()
+    document.body.removeChild(link)
   }
   
   return (

@@ -40,8 +40,8 @@ const staticMaterials = [
     title: "Lesson 3 - 新课程标题",
     description: "课程描述",
     type: "lecture", // lecture/reading/supplementary
-    uploadDate: "2025-01-15T08:00:00.000Z", // 上传日期
-    size: 5000000, // 文件大小(字节)
+    uploadDate: null, // 将自动获取文件修改时间
+    size: null, // 将自动获取文件大小
     filename: "lesson3.pdf" // 文件名(需与实际文件名一致)
   }
 ]
@@ -65,7 +65,8 @@ const staticAssignments = [
     description: "作业描述和要求",
     type: "assignment",
     ddl: "2025-02-15T23:59:00.000Z", // 截止日期
-    uploadDate: "2025-01-20T10:00:00.000Z", // 发布日期
+    uploadDate: null, // 自动获取文件修改时间
+    size: null, // 自动获取文件大小
     filename: "HW2.zip" // 文件名(需与实际文件名一致)
   }
 ]
@@ -105,7 +106,7 @@ const staticExampleFiles = [
 - **作业说明**: `HW{N}_instruction.pdf` (如: HW1_instruction.pdf)
 
 ### 项目范例 (Projects)
-- **优秀范例**: `example{N}.zip` (如: example1.zip, example2.zip, group{N}.zip与public/files中保持一致即可)
+- **优秀范例**: `example{N}.zip` (如: example1.zip, example2.zip)
 - **项目要求**: `project_requirements.pdf`
 
 ## ⚠️ 重要注意事项
@@ -118,6 +119,39 @@ const staticExampleFiles = [
    - Materials: `lecture`(课件) / `reading`(阅读材料) / `supplementary`(补充材料)
    - Assignments: `assignment`
    - Projects: `example`
+
+## 📊 自动元数据提取
+
+### Materials和Assignments页面特性
+- **自动获取文件大小**: 系统会自动读取文件的实际大小
+- **自动获取修改时间**: 使用文件的最后修改时间作为上传日期
+- **无需手动填写**: `uploadDate` 和 `size` 字段设置为 `null` 即可
+
+### 添加新材料/作业时
+```javascript
+// Materials
+{
+  id: "新ID",
+  title: "课程标题",
+  description: "课程描述", 
+  type: "lecture", // 必填
+  uploadDate: null, // 自动获取
+  size: null, // 自动获取
+  filename: "实际文件名.pdf" // 必填且准确
+}
+
+// Assignments  
+{
+  id: "新ID",
+  title: "作业标题",
+  description: "作业描述",
+  type: "assignment",
+  ddl: "2025-02-15T23:59:00.000Z", // 截止日期(必填)
+  uploadDate: null, // 自动获取
+  size: null, // 自动获取
+  filename: "实际文件名.zip" // 必填且准确
+}
+```
 
 ## 🚀 部署流程
 

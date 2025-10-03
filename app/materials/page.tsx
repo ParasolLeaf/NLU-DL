@@ -17,6 +17,15 @@ const staticMaterials = [
     uploadDate: null, // 将自动获取
     size: null, // 将自动获取
     filename: "lesson1.pdf"
+  },
+  {
+    id: "2",
+    title: "Lesson 2 - 课程介绍",
+    description: "课程概述、学习目标和基础概念介绍",
+    type: "lecture",
+    uploadDate: null, // 将自动获取
+    size: null, // 将自动获取
+    filename: "lesson2.pdf"
   }
 ]
 

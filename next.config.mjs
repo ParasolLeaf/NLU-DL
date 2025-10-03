@@ -2,8 +2,8 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/NLU-DL-SERVER' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/NLU-DL-SERVER/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/NLU-DL' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/NLU-DL/' : '',
   images: {
     unoptimized: true,
   },

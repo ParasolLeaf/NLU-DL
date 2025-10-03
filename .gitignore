@@ -4,7 +4,11 @@
 /node_modules
 
 # next.js
+.yarn/install-state.gz
 /out/
+
+# production
+/build
 
 # production
 /build

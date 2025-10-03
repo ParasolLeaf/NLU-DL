@@ -1,6 +1,8 @@
-# NLU-DL 课程网站
+# NLU-DL 课程网站 (gh-pages分支部署版本)
 
 基于深度学习的自然语言理解课程网站，使用 Next.js 构建，支持完整的页面跳转和文件下载功能。
+
+**注意：此项目的开发代码位于 gh-pages 分支，master 分支保持不变。**
 
 ## 🌟 功能特性
 
@@ -15,11 +17,11 @@
 
 ## 🚀 快速部署
 
-### 1. 推送到 GitHub
+### 1. 推送到 GitHub gh-pages分支
 ```bash
 git add .
-git commit -m "Deploy course website"
-git push origin main
+git commit -m "Update course website"
+git push origin gh-pages  # 推送到gh-pages分支
 ```
 
 ### 2. 配置 GitHub Pages
@@ -29,7 +31,14 @@ git push origin main
 4. 选择 "gh-pages" 分支和 "/ (root)" 文件夹
 5. 保存设置
 
-### 3. 本地开发
+### 3. 工作流程
+- 开发代码保持在 `gh-pages` 分支
+- 代码推送到 `gh-pages` 分支触发构建
+- GitHub Actions 自动构建
+- 构建后的静态文件覆盖 `gh-pages` 分支
+- GitHub Pages 从 `gh-pages` 分支提供服务
+
+### 4. 本地开发
 ```bash
 # 安装依赖
 npm install
@@ -39,9 +48,6 @@ npm run dev
 
 # 构建生产版本
 npm run build
-
-# 手动部署到 gh-pages
-npm run deploy
 ```
 
 ## 📁 项目结构
@@ -97,4 +103,15 @@ public/files/
 ## 🌐 访问地址
 
 部署完成后，网站将在以下地址可用：
-`https://yourusername.github.io/NLU-DL-SERVER/`
+`https://yourusername.github.io/NLU-DL/`
+
+## ⚠️ 重要说明
+
+- **开发分支**: `gh-pages` (包含源代码)
+- **部署分支**: `gh-pages` (构建后覆盖为静态文件)
+- **保护分支**: `master` (不可修改)
+
+每次推送到 `gh-pages` 分支时，GitHub Actions 会：
+1. 构建 Next.js 项目
+2. 将构建后的静态文件覆盖到 `gh-pages` 分支
+3. GitHub Pages 自动更新网站

@@ -1,8 +1,11 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FileText, Download, Calendar, Eye } from "lucide-react"
+import { useState } from "react"
 
 // 静态课程材料数据
 const staticMaterials = [
@@ -18,8 +21,8 @@ const staticMaterials = [
 ]
 
 export default function MaterialsPage() {
+  const [activeFilter, setActiveFilter] = useState("全部")
   const materials = staticMaterials
-  const activeFilter = "全部"
 
   const materialTypes = [
     { type: "全部", count: materials.length },

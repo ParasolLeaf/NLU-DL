@@ -1,8 +1,13 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Download, Calendar, Clock, CircleCheck as CheckCircle } from "lucide-react"
+import { useState, useEffect } from "react"
+
+import { CircleAlert as AlertCircle } from "lucide-react"
 
 // 静态作业数据
 const staticAssignments = [
@@ -24,11 +29,16 @@ function calcStatus(dueDateStr: string): "已截止" | "进行中" {
 }
 
 export default function AssignmentsPage() {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const assignmentFiles = staticAssignments
 
   const handleDownloadFile = (file: any) => {
-    // 在静态模式下，显示提示信息
-    alert("文件下载功能在静态网站模式下不可用")
+    // 模拟文件下载
+    const link = document.createElement('a')
+    link.href = `/files/${file.filename}`
+    link.download = file.filename
+    link.click()
   }
 
   function getStatusColor(status: string) {

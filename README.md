@@ -91,10 +91,10 @@ npm run build
 
 ## 📁 文件管理
 
-将课程文件放在 `public/files/` 目录下：
+将课程文件放在 `public/files/` 目录下：名称自拟
 ```
 public/files/
-├── lesson1.pdf
+├── lesson1.pdf 
 ├── HW1.zip
 ├── example1.zip
 └── ...

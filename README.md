@@ -43,11 +43,11 @@ git push origin gh-pages-src  # 推送到gh-pages-src分支
 # 安装依赖
 npm install
 
-# 启动开发服务器
-npm run dev
-
 # 构建生产版本
 npm run build
+
+# 启动开发服务器
+npm run dev
 ```
 
 ## 📁 项目结构

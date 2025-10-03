@@ -6,12 +6,11 @@
 # next.js
 .yarn/install-state.gz
 /out/
+.next/
 
 # production
 /build
-
-# production
-/build
+package-lock.json
 
 # debug
 npm-debug.log*

@@ -15,14 +15,14 @@ const staticExampleFiles = [
     title: "优秀范例 1",
     description: "往年优秀大作业示例",
     type: "example",
-    filename: "example1.zip"
+    filename: "group4.zip"
   },
   {
     id: "2", 
     title: "优秀范例 2",
     description: "往年优秀大作业示例",
     type: "example",
-    filename: "example2.zip"
+    filename: "group11.zip"
   }
 ]
 
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
   const handleDownloadFile = (file: any) => {
     // 直接下载文件
     const link = document.createElement('a')
-    link.href = `/NLU-DL/files/${file.filename}`
+    link.href = `/NLU-DL/files/projects/${file.filename}`
     link.download = file.filename
     document.body.appendChild(link)
     link.click()

@@ -17,6 +17,15 @@ const staticMaterials = [
     uploadDate: "2025-09-22T08:21:22.334Z",
     size: 4009521,
     filename: "lesson1.pdf"
+  },
+  {
+    id: "2",
+    title: "Lesson 2 - 课程介绍",
+    description: "课程概述、学习目标和基础概念介绍",
+    type: "lecture",
+    uploadDate: "2025-09-22T08:21:22.334Z",
+    size: 4009521,
+    filename: "lesson2.pdf"
   }
 ]
 
@@ -36,7 +45,7 @@ export default function MaterialsPage() {
   const handleDownload = (material: any) => {
     // 直接下载文件
     const link = document.createElement('a')
-    link.href = `/NLU-DL/files/${material.filename}`
+    link.href = `/NLU-DL/files/materials/${material.filename}`
     link.download = material.filename
     document.body.appendChild(link)
     link.click()
@@ -45,7 +54,7 @@ export default function MaterialsPage() {
 
   const handlePreview = (material: any) => {
     // 在新窗口打开文件
-    window.open(`/NLU-DL/files/${material.filename}`, '_blank')
+    window.open(`/NLU-DL/files/materials/${material.filename}`, '_blank')
   }
 
   return (

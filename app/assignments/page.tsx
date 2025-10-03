@@ -36,7 +36,7 @@ export default function AssignmentsPage() {
   const handleDownloadFile = (file: any) => {
     // 直接下载文件
     const link = document.createElement('a')
-    link.href = `/NLU-DL/files/${file.filename}`
+    link.href = `/NLU-DL/files/assignments/${file.filename}`
     link.download = file.filename
     document.body.appendChild(link)
     link.click()

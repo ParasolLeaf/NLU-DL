@@ -61,6 +61,9 @@ npm run dev
 │   └── admin/            # 管理页面
 ├── components/            # React 组件
 ├── public/files/         # 课程文件存储
+│   ├── materials/        # 课程材料文件
+│   ├── assignments/      # 作业文件
+│   └── projects/         # 项目范例文件
 ├── package.json           # 项目配置
 ├── next.config.mjs        # Next.js 配置
 └── README.md              # 说明文档
@@ -91,25 +94,50 @@ npm run dev
 
 ## 📁 文件管理
 
-将课程文件放在 `public/files/` 目录下：
+将课程文件按类型放在对应目录下：
 ```
 public/files/
-├── lesson1.pdf
-├── HW1.zip
-├── example1.zip
-└── ...
+├── materials/          # 课程材料
+│   ├── lesson1.pdf
+│   ├── lesson2.pdf
+│   └── ...
+├── assignments/        # 课程作业
+│   ├── HW1.zip
+│   ├── HW2.zip
+│   └── ...
+├── projects/          # 课程大作业
+│   ├── example1.zip
+│   ├── example2.zip
+│   └── ...
+└── README.md          # 文件管理说明
 ```
+
+## 📝 添加新文件
+
+添加新的课程文件时，需要：
+
+1. **将文件放入对应目录**
+   - 课程材料 → `public/files/materials/`
+   - 课程作业 → `public/files/assignments/`
+   - 项目范例 → `public/files/projects/`
+
+2. **更新对应页面的静态数据**
+   - 材料页面 → `app/materials/page.tsx`
+   - 作业页面 → `app/assignments/page.tsx`
+   - 项目页面 → `app/projects/page.tsx`
+
+详细操作说明请参考 `public/files/README.md`
 
 ## 🌐 访问地址
 
 部署完成后，网站将在以下地址可用：
-`https://yourusername.github.io/NLU-DL/`
+`https://parasolleaf.github.io/NLU-DL/`
 
 ## ⚠️ 重要说明
 
-- **开发分支**: `gh-pages-src` (包含源代码)
+- **开发分支**: `gh-pages-src` (包含网页源代码)
 - **部署分支**: `gh-pages` (构建后覆盖为静态文件)
-- **保护分支**: `master` (不可修改)
+- **保护分支**: `master` (课程demo代码样例不可修改)
 
 每次推送到 `gh-pages-src` 分支时，GitHub Actions 会：
 1. 构建 Next.js 项目

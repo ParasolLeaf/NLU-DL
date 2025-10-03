@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FileText, Download, Calendar, Eye } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 // 静态课程材料数据
 const staticMaterials = [
@@ -14,24 +14,59 @@ const staticMaterials = [
     title: "Lesson 1 - 课程介绍",
     description: "课程概述、学习目标和基础概念介绍",
     type: "lecture",
-    uploadDate: "2025-09-22T08:21:22.334Z",
-    size: 4009521,
+    uploadDate: null, // 将自动获取
+    size: null, // 将自动获取
     filename: "lesson1.pdf"
-  },
-  {
-    id: "2",
-    title: "Lesson 2 - 课程介绍",
-    description: "课程概述、学习目标和基础概念介绍",
-    type: "lecture",
-    uploadDate: "2025-09-22T08:21:22.334Z",
-    size: 4009521,
-    filename: "lesson2.pdf"
   }
 ]
 
+// 获取文件元数据的函数
+async function getFileMetadata(filename: string) {
+  try {
+    const response = await fetch(`/NLU-DL/files/materials/${filename}`, { method: 'HEAD' })
+    if (response.ok) {
+      const lastModified = response.headers.get('last-modified')
+      const contentLength = response.headers.get('content-length')
+      
+      return {
+        uploadDate: lastModified ? new Date(lastModified).toISOString() : new Date().toISOString(),
+        size: contentLength ? parseInt(contentLength) : 0
+      }
+    }
+  } catch (error) {
+    console.warn(`无法获取文件 ${filename} 的元数据:`, error)
+  }
+  
+  // 返回默认值
+  return {
+    uploadDate: new Date().toISOString(),
+    size: 0
+  }
+}
 export default function MaterialsPage() {
   const [activeFilter, setActiveFilter] = useState("全部")
-  const materials = staticMaterials
+  const [materials, setMaterials] = useState(staticMaterials)
+  const [loading, setLoading] = useState(true)
+
+  // 在组件挂载时获取文件元数据
+  useEffect(() => {
+    const loadFileMetadata = async () => {
+      const updatedMaterials = await Promise.all(
+        staticMaterials.map(async (material) => {
+          const metadata = await getFileMetadata(material.filename)
+          return {
+            ...material,
+            uploadDate: metadata.uploadDate,
+            size: metadata.size
+          }
+        })
+      )
+      setMaterials(updatedMaterials)
+      setLoading(false)
+    }
+
+    loadFileMetadata()
+  }, [])
 
   const materialTypes = [
     { type: "全部", count: materials.length },
@@ -57,6 +92,27 @@ export default function MaterialsPage() {
     window.open(`/NLU-DL/files/materials/${material.filename}`, '_blank')
   }
 
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Navigation />
+        <section className="py-12 px-4 bg-gradient-to-r from-primary/5 to-secondary/5">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center space-y-4">
+              <h1 className="text-4xl font-bold text-balance">课程材料</h1>
+            </div>
+          </div>
+        </section>
+        <section className="py-12 px-4">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center">
+              <p className="text-lg text-muted-foreground">正在加载文件信息...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  }
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -141,11 +197,11 @@ export default function MaterialsPage() {
                         </div>
                         <div className="flex items-center gap-1">
                           <Calendar className="h-4 w-4" />
-                          {new Date(material.uploadDate).toLocaleDateString()}
+                          {material.uploadDate ? new Date(material.uploadDate).toLocaleDateString() : '未知'}
                         </div>
                       </div>
                       <div className="text-xs bg-muted px-2 py-1 rounded">
-                        {(material.size / 1024 / 1024).toFixed(1)} MB
+                        {material.size ? (material.size / 1024 / 1024).toFixed(1) : '0'} MB
                       </div>
                     </div>
                   </CardContent>

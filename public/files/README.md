@@ -105,7 +105,7 @@ const staticExampleFiles = [
 - **作业说明**: `HW{N}_instruction.pdf` (如: HW1_instruction.pdf)
 
 ### 项目范例 (Projects)
-- **优秀范例**: `example{N}.zip` (如: example1.zip, example2.zip)
+- **优秀范例**: `example{N}.zip` (如: example1.zip, example2.zip, group{N}.zip与public/files中保持一致即可)
 - **项目要求**: `project_requirements.pdf`
 
 ## ⚠️ 重要注意事项

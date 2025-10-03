@@ -12,7 +12,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ssh-key: ${{ secrets.DEPLOY_KEY }} # 项目settings中的secrets变量对应deploy key
           ref: gh-pages  # 明确指定检出gh-pages分支
 
       - name: Setup Node.js
@@ -31,9 +30,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        env:
-          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           publish_branch: gh-pages-build  # 先部署到临时分支
           force_orphan: true

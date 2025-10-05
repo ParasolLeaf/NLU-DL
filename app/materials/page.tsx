@@ -65,7 +65,7 @@ async function getFileMetadata(filename: string) {
       const contentLength = response.headers.get('content-length')
       
       return {
-        uploadDate: lastModified ? new Date(lastModified).toISOString() : new Date().toISOString(),
+        uploadDate: predefinedUploadDate ? predefinedUploadDate : (lastModified ? new Date(lastModified).toISOString() : new Date().toISOString()),
         size: contentLength ? parseInt(contentLength) : 0
       }
     }
@@ -75,7 +75,7 @@ async function getFileMetadata(filename: string) {
   
   // 返回默认值
   return {
-    uploadDate: new Date().toISOString(),
+    uploadDate: predefinedUploadDate ? predefinedUploadDate : new Date().toISOString(),
     size: 0
   }
 }

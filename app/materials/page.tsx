@@ -26,6 +26,15 @@ const staticMaterials = [
     uploadDate: null, // 将自动获取
     size: null, // 将自动获取
     filename: "lesson2.pdf"
+  },
+  {
+    id: "3",
+    title: "2025 Reading List",
+    description: "2025年阅读清单",
+    type: "reading",
+    uploadDate: null, // 将自动获取
+    size: null, // 将自动获取
+    filename: "2025 Reading List.zip"
   }
 ]
 

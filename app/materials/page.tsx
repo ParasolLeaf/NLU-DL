@@ -11,8 +11,8 @@ import { useState, useEffect } from "react"
 const staticMaterials = [
   {
     id: "1",
-    title: "Lesson 1 - 课程介绍",
-    description: "课程概述、学习目标和基础概念介绍",
+    title: "Lesson 1",
+    description: "课程简介、自然语言理解与语言模型",
     type: "lecture",
     uploadDate: null, // 将自动获取
     size: null, // 将自动获取
@@ -20,8 +20,8 @@ const staticMaterials = [
   },
   {
     id: "2",
-    title: "Lesson 2 - 课程介绍",
-    description: "课程概述、学习目标和基础概念介绍",
+    title: "Lesson 2",
+    description: "神经语言模型与词嵌入",
     type: "lecture",
     uploadDate: null, // 将自动获取
     size: null, // 将自动获取
@@ -30,11 +30,29 @@ const staticMaterials = [
   {
     id: "3",
     title: "2025 Reading List",
-    description: "2025年阅读清单",
+    description: "2025年论文阅读清单",
     type: "reading",
     uploadDate: null, // 将自动获取
     size: null, // 将自动获取
     filename: "2025_Reading_List.zip"
+  },
+  {
+    id: "4",
+    title: "2025 课程项目介绍",
+    description: "2025年课程项目介绍，包含基本的api调用说明与项目要求，包含的样例代码在github仓库master分支中，链接见https://github.com/ParasolLeaf/NLU-DL",
+    type: "supplementary",
+    uploadDate: null, // 将自动获取
+    size: null, // 将自动获取
+    filename: "project_intro.pdf"
+  },
+  {
+    id: "5",
+    title: "conda 环境配置",
+    description: "conda环境配置参考文档，及相关错误解决方案和参考.condarc文件",
+    type: "supplementary",
+    uploadDate: null, // 将自动获取
+    size: null, // 将自动获取
+    filename: "conda.zip"
   }
 ]
 
@@ -93,7 +111,14 @@ export default function MaterialsPage() {
     { type: "补充材料", count: materials.filter((m) => m.type === "supplementary").length },
   ]
 
-  const filteredMaterials = materials
+  const filteredMaterials = activeFilter === "全部" 
+    ? materials 
+    : materials.filter((material) => {
+        if (activeFilter === "课件") return material.type === "lecture"
+        if (activeFilter === "阅读材料") return material.type === "reading"
+        if (activeFilter === "补充材料") return material.type === "supplementary"
+        return true
+      })
 
   const handleDownload = (material: any) => {
     // 直接下载文件

@@ -23,6 +23,27 @@ public/files/
 
 ## 🔧 添加新文件的操作流程
 
+### 0. 大文件处理策略
+
+**对于大于50MB的文件，建议使用以下方案：**
+
+#### 方案: GitHub Releases (推荐)
+1. 将大文件上传到 GitHub Releases
+2. 在代码中使用外部链接：
+```javascript
+{
+  id: "3",
+  title: "大文件示例",
+  description: "文件描述",
+  type: "reading",
+  uploadDate: "2025-01-15",
+  size: 75000000, // 手动设置文件大小(字节)
+  filename: "large_file.zip",
+  isExternal: true, // 标记为外部链接
+  externalUrl: "https://github.com/username/repo/releases/download/v1.0/large_file.zip"
+}
+```
+
 ### 1. 添加课程材料 (Materials)
 
 **步骤1**: 将文件放入对应目录
@@ -42,7 +63,9 @@ const staticMaterials = [
     type: "lecture", // lecture/reading/supplementary
     uploadDate: "2025-01-15", // 手动设置日期(YYYY-MM-DD)或null(自动获取)
     size: null, // 将自动获取文件大小
-    filename: "lesson3.pdf" // 文件名(需与实际文件名一致)
+    filename: "lesson3.pdf", // 文件名(需与实际文件名一致)
+    isExternal: false, // 是否为外部链接
+    externalUrl: null // 外部链接URL(仅当isExternal为true时需要)
   }
 ]
 ```
@@ -111,6 +134,11 @@ const staticExampleFiles = [
 
 ## ⚠️ 重要注意事项
 
+### 文件大小限制
+- **小文件(<50MB)**: 可直接放入public/files目录
+- **大文件(>50MB)**: 必须使用外部链接方案，避免页面加载卡顿
+- **GitHub Pages限制**: 单个文件不能超过100MB，仓库总大小不能超过1GB
+
 1. **文件名一致性**: 确保代码中的 `filename` 字段与实际文件名完全一致
 2. **文件大小**: 建议在代码中填写准确的文件大小(字节)，便于用户了解下载大小
 3. **日期格式**: 使用 ISO 8601 格式 (`YYYY-MM-DDTHH:mm:ss.sssZ`)
@@ -119,6 +147,7 @@ const staticExampleFiles = [
    - Materials: `lecture`(课件) / `reading`(阅读材料) / `supplementary`(补充材料)
    - Assignments: `assignment`
    - Projects: `example`
+6. **外部链接**: 大文件使用 `isExternal: true` 和 `externalUrl` 字段
 
 ## 📊 自动元数据提取
 
@@ -131,7 +160,7 @@ const staticExampleFiles = [
 
 ### 添加新材料/作业时
 ```javascript
-// Materials
+// 小文件 - 本地存储
 {
   id: "新ID",
   title: "课程标题",
@@ -139,7 +168,23 @@ const staticExampleFiles = [
   type: "lecture", // 必填
   uploadDate: "2025-01-15", // 手动设置或null(自动获取)
   size: null, // 自动获取
-  filename: "实际文件名.pdf" // 必填且准确
+  filename: "实际文件名.pdf", // 必填且准确
+  isExternal: false,
+  externalUrl: null
+}
+
+// 大文件 - 外部链接
+// Materials
+{
+  id: "新ID",
+  title: "课程标题",
+  description: "课程描述", 
+  type: "lecture", // 必填
+  uploadDate: "2025-01-15", // 手动设置或null(自动获取)
+  size: 75000000, // 大文件手动设置
+  filename: "实际文件名.zip", // 必填且准确
+  isExternal: true, // 外部链接
+  externalUrl: "https://github.com/user/repo/releases/download/v1.0/file.zip"
 }
 
 // Assignments  

@@ -16,7 +16,8 @@ const staticMaterials = [
     type: "lecture",
     uploadDate: "2025-09-12", // 手动设置日期，格式：YYYY-MM-DD
     size: null, // 将自动获取
-    filename: "lesson1.pdf"
+    filename: "lesson1.pdf",
+    isExternal: false // 是否为外部链接
   },
   {
     id: "2",
@@ -25,7 +26,8 @@ const staticMaterials = [
     type: "lecture",
     uploadDate: "2025-09-19", // 自动获取文件修改时间
     size: null, // 将自动获取
-    filename: "lesson2.pdf"
+    filename: "lesson2.pdf",
+    isExternal: false
   },
   {
     id: "3",
@@ -33,8 +35,10 @@ const staticMaterials = [
     description: "2025年论文阅读清单",
     type: "reading",
     uploadDate: "2025-09-26", // 将自动获取
-    size: null, // 将自动获取
-    filename: "2025_Reading_List.zip"
+    size: 54329344, // 大文件手动设置大小(字节)
+    filename: "2025_Reading_List.zip",
+    isExternal: true, // 标记为外部链接
+    externalUrl: "https://github.com/ParasolLeaf/NLU-DL/releases/download/v1.0/2025_Reading_List.zip" // 外部下载链接
   },
   {
     id: "4",
@@ -43,7 +47,8 @@ const staticMaterials = [
     type: "supplementary",
     uploadDate: "2025-09-19", // 将自动获取
     size: null, // 将自动获取
-    filename: "project_intro.pdf"
+    filename: "project_intro.pdf",
+    isExternal: false
   },
   {
     id: "5",
@@ -52,7 +57,8 @@ const staticMaterials = [
     type: "supplementary",
     uploadDate: "2025-09-19", // 将自动获取
     size: null, // 将自动获取
-    filename: "conda.zip"
+    filename: "conda.zip",
+    isExternal: false
   }
 ]
 
@@ -89,6 +95,18 @@ export default function MaterialsPage() {
     const loadFileMetadata = async () => {
       const updatedMaterials = await Promise.all(
         staticMaterials.map(async (material) => {
+          // 如果是外部链接，跳过元数据获取
+          if (material.isExternal) {
+            const predefinedDate = material.uploadDate ? 
+              new Date(material.uploadDate + 'T00:00:00.000Z').toISOString() : 
+              new Date().toISOString()
+            return {
+              ...material,
+              uploadDate: predefinedDate,
+              size: material.size || 0
+            }
+          }
+          
           // 如果有预定义的uploadDate，转换为ISO格式
           const predefinedDate = material.uploadDate ? 
             new Date(material.uploadDate + 'T00:00:00.000Z').toISOString() : 
@@ -126,18 +144,28 @@ export default function MaterialsPage() {
       })
 
   const handleDownload = (material: any) => {
-    // 直接下载文件
-    const link = document.createElement('a')
-    link.href = `/NLU-DL/files/materials/${material.filename}`
-    link.download = material.filename
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+    if (material.isExternal && material.externalUrl) {
+      // 外部链接直接跳转
+      window.open(material.externalUrl, '_blank')
+    } else {
+      // 本地文件下载
+      const link = document.createElement('a')
+      link.href = `/NLU-DL/files/materials/${material.filename}`
+      link.download = material.filename
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
   }
 
   const handlePreview = (material: any) => {
-    // 在新窗口打开文件
-    window.open(`/NLU-DL/files/materials/${material.filename}`, '_blank')
+    if (material.isExternal && material.externalUrl) {
+      // 外部链接无法预览，直接下载
+      handleDownload(material)
+    } else {
+      // 本地文件预览
+      window.open(`/NLU-DL/files/materials/${material.filename}`, '_blank')
+    }
   }
 
   if (loading) {
@@ -225,13 +253,15 @@ export default function MaterialsPage() {
                         <CardDescription className="text-base">{material.description}</CardDescription>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Button variant="outline" size="sm" onClick={() => handlePreview(material)}>
-                          <Eye className="h-4 w-4 mr-2" />
-                          预览
-                        </Button>
+                        {!material.isExternal && (
+                          <Button variant="outline" size="sm" onClick={() => handlePreview(material)}>
+                            <Eye className="h-4 w-4 mr-2" />
+                            预览
+                          </Button>
+                        )}
                         <Button size="sm" onClick={() => handleDownload(material)}>
                           <Download className="h-4 w-4 mr-2" />
-                          下载
+                          {material.isExternal ? '外部下载' : '下载'}
                         </Button>
                       </div>
                     </div>

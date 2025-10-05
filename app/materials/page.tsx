@@ -34,7 +34,7 @@ const staticMaterials = [
     type: "reading",
     uploadDate: null, // 将自动获取
     size: null, // 将自动获取
-    filename: "2025 Reading List.zip"
+    filename: "2025_Reading_List.zip"
   }
 ]
 

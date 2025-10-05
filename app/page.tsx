@@ -96,6 +96,8 @@ export default function HomePage() {
                     本高级课程全面涵盖自然语言理解的深度学习方法。
                     学生将探索最先进的神经架构，包括Transformer、
                     注意力机制和大型语言模型。
+                    课程主页：https://parasolleaf.github.io/NLU-DL/。
+                    课程代码demo：https://github.com/ParasolLeaf/NLU-DL。
                   </p>
                 </CardContent>
               </Card>
@@ -111,11 +113,11 @@ export default function HomePage() {
                   <div className="space-y-3">
                     <div>
                       <h4 className="font-semibold">邓志鸿教授</h4>
-                      <p className="text-sm text-muted-foreground">智能学院</p>
+                      <p className="text-sm text-muted-foreground">北京大学智能学院</p>
                     </div>
                     <div className="text-sm space-y-1">
                       <p>
-                        <strong>办公室:</strong> 理科二号楼 
+                        <strong>办公室:</strong> 理科二号楼 2318
                       </p>
                       <p>
                         <strong>邮件:</strong> zhdeng@pku.edu.cn
@@ -137,7 +139,7 @@ export default function HomePage() {
                     <div>
                       <h4 className="font-semibold">吴宇桐</h4>
                       <p className="text-sm text-muted-foreground">博士一年级</p>
-                      <p className="text-xs">2501112184@stu.pku.edu.cn</p>
+                      <p className="text-xs">wuyt25@stu.pku.edu.cn</p>
                     </div>
                   </div>
                 </CardContent>

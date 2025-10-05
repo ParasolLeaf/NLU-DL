@@ -14,7 +14,7 @@ const staticMaterials = [
     title: "Lesson 1",
     description: "课程简介、自然语言理解与语言模型",
     type: "lecture",
-    uploadDate: null, // 将自动获取
+    uploadDate: "2025-09-12", // 手动设置日期，格式：YYYY-MM-DD
     size: null, // 将自动获取
     filename: "lesson1.pdf"
   },
@@ -23,7 +23,7 @@ const staticMaterials = [
     title: "Lesson 2",
     description: "神经语言模型与词嵌入",
     type: "lecture",
-    uploadDate: null, // 将自动获取
+    uploadDate: "2025-09-19", // 自动获取文件修改时间
     size: null, // 将自动获取
     filename: "lesson2.pdf"
   },
@@ -32,7 +32,7 @@ const staticMaterials = [
     title: "2025 Reading List",
     description: "2025年论文阅读清单",
     type: "reading",
-    uploadDate: null, // 将自动获取
+    uploadDate: "2025-09-26", // 将自动获取
     size: null, // 将自动获取
     filename: "2025_Reading_List.zip"
   },
@@ -41,7 +41,7 @@ const staticMaterials = [
     title: "2025 课程项目介绍",
     description: "2025年课程项目介绍，包含基本的api调用说明与项目要求，包含的样例代码在github仓库master分支中，链接见https://github.com/ParasolLeaf/NLU-DL",
     type: "supplementary",
-    uploadDate: null, // 将自动获取
+    uploadDate: "2025-09-19", // 将自动获取
     size: null, // 将自动获取
     filename: "project_intro.pdf"
   },
@@ -50,7 +50,7 @@ const staticMaterials = [
     title: "conda 环境配置",
     description: "conda环境配置参考文档，及相关错误解决方案和参考.condarc文件",
     type: "supplementary",
-    uploadDate: null, // 将自动获取
+    uploadDate: "2025-09-19", // 将自动获取
     size: null, // 将自动获取
     filename: "conda.zip"
   }
@@ -89,7 +89,12 @@ export default function MaterialsPage() {
     const loadFileMetadata = async () => {
       const updatedMaterials = await Promise.all(
         staticMaterials.map(async (material) => {
-          const metadata = await getFileMetadata(material.filename)
+          // 如果有预定义的uploadDate，转换为ISO格式
+          const predefinedDate = material.uploadDate ? 
+            new Date(material.uploadDate + 'T00:00:00.000Z').toISOString() : 
+            null
+          
+          const metadata = await getFileMetadata(material.filename, predefinedDate)
           return {
             ...material,
             uploadDate: metadata.uploadDate,

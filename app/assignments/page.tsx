@@ -10,7 +10,7 @@ import { useState, useEffect } from "react"
 import { CircleAlert as AlertCircle } from "lucide-react"
 
 // 获取文件元数据的函数
-async function getFileMetadata(filename: string) {
+async function getFileMetadata(filename: string, predefinedUploadDate?: string | null) {
   try {
     const response = await fetch(`/NLU-DL/files/assignments/${filename}`, { method: 'HEAD' })
     if (response.ok) {
@@ -18,7 +18,7 @@ async function getFileMetadata(filename: string) {
       const contentLength = response.headers.get('content-length')
       
       return {
-        uploadDate: lastModified ? new Date(lastModified).toISOString() : new Date().toISOString(),
+        uploadDate: predefinedUploadDate || (lastModified ? new Date(lastModified).toISOString() : new Date().toISOString()),
         size: contentLength ? parseInt(contentLength) : 0
       }
     }
@@ -28,7 +28,7 @@ async function getFileMetadata(filename: string) {
   
   // 返回默认值
   return {
-    uploadDate: new Date().toISOString(),
+    uploadDate: predefinedUploadDate || new Date().toISOString(),
     size: 0
   }
 }
@@ -41,7 +41,7 @@ const staticAssignments = [
     description: "课程作业主要为了帮助同学们了解大模型api的调用和后续处理方法，体会大模型在自然语言处理任务上的准确性、泛化性，具体要求见附件。\n测试数据在agnews_sample.csv，包含100条测试数据，只需要在该100条数据上完成实验即可，不需要从网络上下载完整的测试集。",
     type: "assignment",
     ddl: "2025-09-30T15:59:00.000Z",
-    uploadDate: null, // 将自动获取
+    uploadDate: "2025-09-19", // 手动设置发布日期，格式：YYYY-MM-DD
     size: null, // 将自动获取
     filename: "HW1.zip"
   }
@@ -64,7 +64,12 @@ export default function AssignmentsPage() {
     const loadFileMetadata = async () => {
       const updatedAssignments = await Promise.all(
         staticAssignments.map(async (assignment) => {
-          const metadata = await getFileMetadata(assignment.filename)
+          // 如果有预定义的uploadDate，转换为ISO格式
+          const predefinedDate = assignment.uploadDate ? 
+            new Date(assignment.uploadDate + 'T00:00:00.000Z').toISOString() : 
+            null
+          
+          const metadata = await getFileMetadata(assignment.filename, predefinedDate)
           return {
             ...assignment,
             uploadDate: metadata.uploadDate,

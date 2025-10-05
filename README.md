@@ -27,9 +27,8 @@ git push origin gh-pages-src  # 推送到gh-pages-src分支
 ### 2. 配置 GitHub Pages
 1. 进入 GitHub 仓库设置
 2. 找到 "Pages" 选项
-3. 在 "Source" 中选择 "Deploy from a branch"
-4. 选择 "gh-pages" 分支和 "/ (root)" 文件夹
-5. 保存设置
+3. 在 "Source" 中选择 "Github Action"
+4. 保存设置
 
 ### 3. 工作流程
 - 开发代码保持在 `gh-pages-src` 分支

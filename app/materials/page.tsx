@@ -45,7 +45,7 @@ const staticMaterials = [
     title: "2025 课程项目介绍",
     description: "2025年课程项目介绍，包含基本的api调用说明与项目要求，包含的样例代码在github仓库master分支中，链接见https://github.com/ParasolLeaf/NLU-DL",
     type: "supplementary",
-    uploadDate: "2025-09-19", // 将自动获取
+    uploadDate: "2025-09-19", // 自动获取
     size: null, // 将自动获取
     filename: "project_intro.pdf",
     isExternal: false
@@ -55,7 +55,7 @@ const staticMaterials = [
     title: "conda 环境配置",
     description: "conda环境配置参考文档，及相关错误解决方案和参考.condarc文件",
     type: "supplementary",
-    uploadDate: "2025-09-19", // 将自动获取
+    uploadDate: "2025-09-19", // 自动获取
     size: null, // 将自动获取
     filename: "conda.zip",
     isExternal: false
@@ -63,7 +63,7 @@ const staticMaterials = [
 ]
 
 // 获取文件元数据的函数
-async function getFileMetadata(filename: string) {
+async function getFileMetadata(filename: string, predefinedUploadDate?: string | null) {
   try {
     const response = await fetch(`/NLU-DL/files/materials/${filename}`, { method: 'HEAD' })
     if (response.ok) {
@@ -93,35 +93,48 @@ export default function MaterialsPage() {
   // 在组件挂载时获取文件元数据
   useEffect(() => {
     const loadFileMetadata = async () => {
-      const updatedMaterials = await Promise.all(
-        staticMaterials.map(async (material) => {
-          // 如果是外部链接，跳过元数据获取
-          if (material.isExternal) {
+      try {
+        const updatedMaterials = await Promise.all(
+          staticMaterials.map(async (material) => {
+            // 如果是外部链接，跳过元数据获取
+            if (material.isExternal) {
+              const predefinedDate = material.uploadDate ? 
+                new Date(material.uploadDate + 'T00:00:00.000Z').toISOString() : 
+                new Date().toISOString()
+              return {
+                ...material,
+                uploadDate: predefinedDate,
+                size: material.size || 0
+              }
+            }
+            
+            // 如果有预定义的uploadDate，转换为ISO格式
             const predefinedDate = material.uploadDate ? 
               new Date(material.uploadDate + 'T00:00:00.000Z').toISOString() : 
-              new Date().toISOString()
+              null
+            
+            const metadata = await getFileMetadata(material.filename, predefinedDate)
             return {
               ...material,
-              uploadDate: predefinedDate,
-              size: material.size || 0
+              uploadDate: metadata.uploadDate,
+              size: metadata.size
             }
-          }
-          
-          // 如果有预定义的uploadDate，转换为ISO格式
-          const predefinedDate = material.uploadDate ? 
+          })
+        )
+        setMaterials(updatedMaterials)
+      } catch (error) {
+        console.error('加载文件元数据失败:', error)
+        // 如果加载失败，使用原始数据
+        setMaterials(staticMaterials.map(material => ({
+          ...material,
+          uploadDate: material.uploadDate ? 
             new Date(material.uploadDate + 'T00:00:00.000Z').toISOString() : 
-            null
-          
-          const metadata = await getFileMetadata(material.filename, predefinedDate)
-          return {
-            ...material,
-            uploadDate: metadata.uploadDate,
-            size: metadata.size
-          }
-        })
-      )
-      setMaterials(updatedMaterials)
-      setLoading(false)
+            new Date().toISOString(),
+          size: material.size || 0
+        })))
+      } finally {
+        setLoading(false)
+      }
     }
 
     loadFileMetadata()
